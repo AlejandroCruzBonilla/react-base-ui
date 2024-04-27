@@ -13,6 +13,11 @@
   "engines": {
     "node": ">=10"
   },
+	"homepage": "https://github.com/AlejandroCruzBonilla/react-base-ui",
+  "repository": {
+    "url": "https://github.com/AlejandroCruzBonilla/react-base-ui",
+    "type": "git"
+  },
   "keywords": [
     "react",
     "typescript",
