@@ -1,5 +1,6 @@
 import React from 'react'
 import classnames from 'classnames';
+import { useComponentByPass } from '../../hooks/useComponentByPass';
 import type { ButtonProps } from './interfaces';
 
 export const Button: React.FC<ButtonProps> = (props) => {
@@ -13,11 +14,9 @@ export const Button: React.FC<ButtonProps> = (props) => {
 		type = 'button',
 	} = props
 
-	console.log(byPass);
+	const {classNames, styles} = useComponentByPass<ButtonProps>(props,byPass)
+	console.log({classNames,styles});
 
-	// if(typeof byPassProps?.classNames?.root === 'function') {
-	// 	console.log(byPassProps.classNames.root(props));
-	// }
 
   return (
 		<button
@@ -30,12 +29,17 @@ export const Button: React.FC<ButtonProps> = (props) => {
 			type={type}
 			onClick={onClick}
 			className={
-				classnames('base-ui__button')
+				classnames('base-ui__button',classNames['root'])
 			}
-			style={byPass?.root?.style}
-		
+			style={styles['root']}
 		>
-			<span>{label}</span>
+			<span 
+				data-component-section='label'
+				className={classnames('base-ui__button-label', classNames['label'])}
+				style={styles['label']}
+			>
+				{label}
+			</span>
 			{children}
 		</button>
 	);

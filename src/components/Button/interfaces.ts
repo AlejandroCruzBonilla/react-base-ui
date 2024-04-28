@@ -1,4 +1,5 @@
-import type{ CSSProperties } from 'react';
+import type { ByPassProps, ByPass } from '../../interfaces';
+
 
 export interface ButtonProps {
 	ariaLabel?: string;
@@ -10,12 +11,7 @@ export interface ButtonProps {
   type?: 'button' | 'submit' | 'reset';
 }
 
-export interface ButtonByPass {
-	root?: ButtonBypassProps;
-	label?: ButtonBypassProps;
-}
-
-export interface ButtonBypassProps {
-	className?: string | ((props: ButtonProps) => string);
-	style?: CSSProperties;
+export interface ButtonByPass extends ByPass<ButtonProps>{
+	root?:	ByPassProps<ButtonProps>;
+	label?:	ByPassProps<ButtonProps>;
 }

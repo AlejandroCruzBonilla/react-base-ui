@@ -4,17 +4,19 @@ function App() {
   return (
     <>
       <Button
-        label="aaa"
+        label="Labels"
         byPass={{
           root: {
             className: props => {
-              console.log(props);
-              return 'alex';
+              return props.label === 'Label' ? 'SIs' : 'NO';
             },
-            // style: {
-            //   backgroundColor: 'red',
-            // },
+            style: {
+              backgroundColor: 'red',
+            },
           },
+					label: {
+						className: 'label_custom_class',
+					},
         }}
       />
     </>
