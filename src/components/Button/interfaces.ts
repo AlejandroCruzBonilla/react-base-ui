@@ -1,14 +1,21 @@
+import type{ CSSProperties } from 'react';
+
 export interface ButtonProps {
-  /**
-   * Button Label
-   */
-  label?: string;
-  /**
-   * Button children can be a React.ReactNode
-   */
+	ariaLabel?: string;
+	byPass?: ButtonByPass;
   children?: React.ReactNode;
-  /**
-   * Button onClick Event
-   */
+  disabled?: boolean;
+  label?: string;
   onClick?: () => void;
+  type?: 'button' | 'submit' | 'reset';
+}
+
+export interface ButtonByPass {
+	root?: ButtonBypassProps;
+	label?: ButtonBypassProps;
+}
+
+export interface ButtonBypassProps {
+	className?: string | ((props: ButtonProps) => string);
+	style?: CSSProperties;
 }

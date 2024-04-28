@@ -32,6 +32,12 @@ export const Default: Story = {
 
 export const WithChildren: Story = {
 	args: {
-		children: <div>Children</div>
+		children: <div>Children</div>,
+	},
+};
+
+export const customClassNames: Story = {
+	args: {
+		label: 'Button',
 	},
 };

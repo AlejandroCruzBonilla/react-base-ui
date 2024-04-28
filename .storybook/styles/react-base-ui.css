@@ -1,1 +1,4 @@
-
+.base-ui__button {
+  display: flex;
+  gap: 0.3rem;
+}
