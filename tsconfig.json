@@ -1,12 +1,13 @@
 {
   // see https://www.typescriptlang.org/tsconfig to better understand tsconfigs
-	// "files": ["src/index.ts"],
-  "include": ["src", "types"],
+  // "files": ["src/index.ts"],
   "compilerOptions": {
-		"allowJs": true,
-		"allowSyntheticDefaultImports": true,
-		"noImplicitAny": true,
-		"rootDir": "./src",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "outDir": "./dist/",
+    "rootDir": "./src",
+    "target": "ES6",
     "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -15,13 +16,14 @@
     "lib": ["dom", "esnext"],
     "module": "esnext",
     "moduleResolution": "node",
-    "noEmit": true,
+    "noEmit": false,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "skipLibCheck": true,
     "sourceMap": true,
-    "strict": true,
-  }
+    "strict": true
+  },
+  "include": ["src"]
 }
