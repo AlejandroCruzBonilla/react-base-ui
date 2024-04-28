@@ -9,6 +9,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
 		ariaLabel,
 		byPass,
 		children,
+		disabled = false,
 		label,
 		onClick,
 		type = 'button',
@@ -32,10 +33,13 @@ export const Button: React.FC<ButtonProps> = (props) => {
 				classnames('base-ui__button',classNames['root'])
 			}
 			style={styles['root']}
+			disabled={disabled}
 		>
 			<span 
 				data-component-section='label'
-				className={classnames('base-ui__button-label', classNames['label'])}
+				className={
+					classnames('base-ui__button-label', classNames['label'])
+				}
 				style={styles['label']}
 			>
 				{label}

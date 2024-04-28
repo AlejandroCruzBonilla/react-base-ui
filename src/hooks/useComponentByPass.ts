@@ -1,5 +1,4 @@
-import { getClassNameFromByPass } from '../helpers';
-import type { ByPass, ByPassStyleProp } from '../interfaces';
+import type { ByPass, ByPassStyleProp, ByPassClassNameProp } from '../interfaces';
 
 export const useComponentByPass = <T>(
 	props: T,
@@ -8,6 +7,23 @@ export const useComponentByPass = <T>(
 	
 	const classNames: { [key: string]: string } = {}
 	const styles: { [key: string]: ByPassStyleProp | undefined } = {}
+
+
+
+	const getClassNameFromByPass = <T>(
+		props:T,
+		byPassClassNameProp: ByPassClassNameProp<T> | undefined
+	):string => {
+	
+		switch (typeof byPassClassNameProp) {
+			case 'function':
+				return byPassClassNameProp(props);
+			case 'string':
+				return byPassClassNameProp;
+			default:
+				return '';
+		}
+	}
 
 	if (typeof byPass !== 'undefined') {
 

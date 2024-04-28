@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <Button
-        label="Labels"
+        label="Label"
         byPass={{
           root: {
             className: props => {

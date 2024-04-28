@@ -1,7 +1,6 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
-// import { fn } from '@storybook/test';
-import { Button, type ButtonProps }  from '../../src/components/Button';
+import { Button, type ButtonProps } from '../../src/components/Button';
 
 
 const meta: Meta<ButtonProps>  = {
@@ -14,9 +13,10 @@ const meta: Meta<ButtonProps>  = {
 		onClick: {action: 'clicked'},
 		children: {control: 'text'}
 	},
+	args: {
+		label: 'Button',
+	},
   tags: ['autodocs'],
-
-  // args: { onClick: fn() },
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -24,20 +24,25 @@ type Story = StoryObj<typeof meta>;
 
 
 export const Default: Story = {
-  args: {
-    label: 'Button',
-  },
+
 };
 
 
 export const WithChildren: Story = {
 	args: {
-		children: <div>Children</div>,
+		children: "Children",
 	},
 };
 
-export const customClassNames: Story = {
+export const WithCustomClassNames: Story = {
 	args: {
-		label: 'Button',
-	},
+		byPass: {
+			"root": {
+				"className": "custom_button"
+			},
+			"label": {
+				"className": "custom_button_label"
+			}
+		}
+	}
 };

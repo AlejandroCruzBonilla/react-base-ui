@@ -1,4 +1,8 @@
 .base-ui__button {
   display: flex;
   gap: 0.3rem;
+  cursor: pointer;
+}
+.base-ui__button:disabled {
+  cursor: not-allowed;
 }
