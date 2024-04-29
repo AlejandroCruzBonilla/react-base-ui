@@ -1,20 +1,20 @@
-import type { ByPass, ByPassStyleProp, ByPassClassNameProp } from '../interfaces';
+import type {
+	ByPass,
+	ByPassStyleProp,
+	ByPassClassNameProp,
+} from '../interfaces';
 
 export const useComponentByPass = <T>(
 	props: T,
-	byPass: ByPass<T> | undefined 
+	byPass: ByPass<T> | undefined,
 ) => {
-	
-	const classNames: { [key: string]: string } = {}
-	const styles: { [key: string]: ByPassStyleProp | undefined } = {}
-
-
+	const classNames: { [key: string]: string } = {};
+	const styles: { [key: string]: ByPassStyleProp | undefined } = {};
 
 	const getClassNameFromByPass = <T>(
-		props:T,
-		byPassClassNameProp: ByPassClassNameProp<T> | undefined
-	):string => {
-	
+		props: T,
+		byPassClassNameProp: ByPassClassNameProp<T> | undefined,
+	): string => {
 		switch (typeof byPassClassNameProp) {
 			case 'function':
 				return byPassClassNameProp(props);
@@ -23,23 +23,21 @@ export const useComponentByPass = <T>(
 			default:
 				return '';
 		}
-	}
+	};
 
 	if (typeof byPass !== 'undefined') {
+		Object.keys(byPass).forEach((key) => {
+			classNames[key] = getClassNameFromByPass<T>(
+				props,
+				byPass[key]?.className,
+			);
 
-		Object.keys(byPass).forEach(key => {
-			
-			classNames[key] = 
-				getClassNameFromByPass<T>(props,byPass[key]?.className);
-	
 			styles[key] = byPass[key]?.style;
-	
 		});
 	}
 
-
 	return {
 		classNames,
-		styles
-	}
-}
+		styles,
+	};
+};

@@ -1,14 +1,15 @@
 .base-ui__button {
-	display: inline-flex;
-	justify-content: center;
 	align-items: center;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	display: inline-flex;
 	gap: 0.3rem;
+	justify-content: center;
 	margin: 0;
 	padding: 0;
-	border: 0;
-	background-color: transparent;
-	cursor: pointer;
+	user-select: none;
 	&:disabled {
-		cursor: not-allowed;
+		cursor: default;
 	}
 }

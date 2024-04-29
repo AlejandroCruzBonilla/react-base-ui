@@ -1,12 +1,12 @@
-import type{ CSSProperties } from 'react';
+import type { CSSProperties } from 'react';
 
 export type ByPass<T> = {
-	[key:string]: ByPassProps<T> | undefined
+	[key: string]: ByPassProps<T> | undefined;
 };
 
 export interface ByPassProps<T> {
-  className?: ByPassClassNameProp<T>;
-  style?: ByPassStyleProp;
+	className?: ByPassClassNameProp<T>;
+	style?: ByPassStyleProp;
 }
 
 export type ByPassClassNameProp<T> = string | ((props: T) => string);
