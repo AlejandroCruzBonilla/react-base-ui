@@ -1,6 +1,7 @@
 import { Button as ButtonDefault } from '../dist';
 import { Button as ButtonComponent } from '../dist/components';
 import { Button } from '../dist/components/Button';
+import '../dist/react-base-ui.min.css'
 
 function App() {
   return (
