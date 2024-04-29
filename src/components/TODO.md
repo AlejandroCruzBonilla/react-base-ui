@@ -1,28 +1,18 @@
 Components
 
---Butttons-
-Button
-ButtonGroup
---
-FloatingButton
-FloatingButtonGroup
---
-ToggleButton
-ToggleButtonGroup
---
-ScrollTopButton
-
-ButtonMenu -??-
-----
 Accordion
 Backdrop
 BreadCrumbs
+Button
+ButtonGroup
 Card
 Chip
 ConfirmDialog
 Dialog
 Divider
 FieldSet
+FloatingButton
+FloatingButtonGroup
 Menu
 MenuBar
 MenuTree
@@ -30,6 +20,7 @@ Message
 NavBar
 Paginator
 Panel
+ScrollTopButton
 SideBar
 Skeleton
 Spinner
@@ -40,4 +31,6 @@ Tabs
 Tag
 TimeLine
 Toast
+ToggleButton
+ToggleButtonGroup
 Toolbar

@@ -11,7 +11,9 @@ const stylesHandler = MiniCssExtractPlugin.loader;
 
 const componentsEntries = glob.sync('./src/components/**/index.ts').reduce((entries, entry) => {
 	const namePath = path.basename(path.dirname(entry));
-	const componentName = `components/${namePath}/index`;
+	let componentName = ''
+	if(entry==='src/components/index.ts') componentName = 'components/index';
+	else componentName = `components/${namePath}/index`;
 	entries[componentName] = `./${entry}`;
 	return entries;
 }, {})
@@ -22,7 +24,6 @@ const config = {
 		index: "./src/index.ts",
 		...componentsEntries,
 	},
-	// entry: {'components/Button/index':'./src/components/Button/index.ts'},
 	output: {
 		filename: '[name].js',
 		path: path.resolve(__dirname, 'dist'),

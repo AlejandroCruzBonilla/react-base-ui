@@ -16,8 +16,6 @@ export const Button: React.FC<ButtonProps> = (props) => {
 	} = props
 
 	const {classNames, styles} = useComponentByPass<ButtonProps>(props,byPass)
-	console.log({classNames,styles});
-
 
   return (
 		<button

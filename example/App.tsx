@@ -1,13 +1,12 @@
 import { Button as ButtonDefault } from '../dist';
+import { Button as ButtonComponent } from '../dist/components';
 import { Button } from '../dist/components/Button';
-import { Accordion } from '../dist/components/Accordion';
 
 function App() {
-	console.log('Loaded');
   return (
     <>
-			<Accordion/>
-			<ButtonDefault label='Default'/>
+      <ButtonDefault label='Default' />
+      <ButtonComponent label='Component' />
       <Button
         label='Label'
         byPass={{
@@ -19,9 +18,9 @@ function App() {
               backgroundColor: 'red',
             },
           },
-					label: {
-						className: 'label_custom_class',
-					},
+          label: {
+            className: 'label_custom_class',
+          },
         }}
       />
     </>
