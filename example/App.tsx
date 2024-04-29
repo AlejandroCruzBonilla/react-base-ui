@@ -5,14 +5,21 @@ import { Button } from '../dist/components/Button';
 function App() {
   return (
     <>
-      <ButtonDefault label='Default' />
-      <ButtonComponent label='Component' />
+      <ButtonDefault
+				label='Dist'
+				onClick={() => console.log('Dist')}
+      />
+      <ButtonComponent
+				label='Components'
+				onClick={() => console.log('Components')}
+			/>
       <Button
-        label='Label'
+        label='Button'
+				onClick={() => console.log('Button')}
         byPass={{
           root: {
             className: props => {
-              return props.label === 'Label' ? 'SIs' : 'NO';
+              return props.label ? 'has_label' : 'non-label';
             },
             style: {
               backgroundColor: 'red',

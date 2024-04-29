@@ -50,7 +50,7 @@ const config = {
 		host: "localhost"
 	},
 	plugins: [
-		new MiniCssExtractPlugin(),
+		new MiniCssExtractPlugin({ filename: 'react-base-ui.min.css',}),
 		// Add your plugins here
 		// Learn more about plugins from https://webpack.js.org/configuration/plugins/
 	],
