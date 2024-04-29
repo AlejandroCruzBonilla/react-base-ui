@@ -19,7 +19,12 @@ export const Button: React.FC<ButtonProps> = (props) => {
 	return (
 		<button
 			data-component-section="root"
-			aria-label={ariaLabel ? ariaLabel : label ? label : undefined}
+			aria-label={
+				ariaLabel ? ariaLabel
+				: label ?
+					label
+				:	undefined
+			}
 			type={type}
 			onClick={onClick}
 			className={classnames('base-ui__button', classNames['root'])}

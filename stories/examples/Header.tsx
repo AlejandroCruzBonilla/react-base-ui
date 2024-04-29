@@ -47,15 +47,14 @@ export const Header = ({
 				<h1>Acme</h1>
 			</div>
 			<div>
-				{user ? (
+				{user ?
 					<>
 						<span className="welcome">
 							Welcome, <b>{user.name}</b>!
 						</span>
 						<Button size="small" onClick={onLogout} label="Log out" />
 					</>
-				) : (
-					<>
+				:	<>
 						<Button size="small" onClick={onLogin} label="Log in" />
 						<Button
 							primary
@@ -64,7 +63,7 @@ export const Header = ({
 							label="Sign up"
 						/>
 					</>
-				)}
+				}
 			</div>
 		</div>
 	</header>
