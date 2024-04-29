@@ -1,6 +1,11 @@
 .base-ui__button {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	gap: 0.3rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
 	cursor: pointer;
 	&:disabled {
 		cursor: not-allowed;
