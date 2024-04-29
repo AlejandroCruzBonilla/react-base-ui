@@ -9518,11 +9518,6 @@ type-is@~1.6.18:
     media-typer "0.3.0"
     mime-types "~2.1.24"
 
-typescript-declaration-webpack-plugin@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/typescript-declaration-webpack-plugin/-/typescript-declaration-webpack-plugin-0.3.0.tgz#46cbaabcafdc78219dea6ee80dec0a68f647004b"
-  integrity sha512-oXW+noTApAkXwfknX98tvaL38Uj9sy52PqN1fa1O4xQeGzt9DJ4VPpf/dhh9ykok1PrTDcMEeEocqfEx0pqHoA==
-
 typescript@^5.4.5:
   version "5.4.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.5.tgz#42ccef2c571fdbd0f6718b1d1f5e6e5ef006f611"

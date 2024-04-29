@@ -1,10 +1,15 @@
-import { Button } from '../dist';
+import { Button as ButtonDefault } from '../dist';
+import { Button } from '../dist/components/Button';
+import { Accordion } from '../dist/components/Accordion';
 
 function App() {
+	console.log('Loaded');
   return (
     <>
+			<Accordion/>
+			<ButtonDefault label='Default'/>
       <Button
-        label="Label"
+        label='Label'
         byPass={{
           root: {
             className: props => {

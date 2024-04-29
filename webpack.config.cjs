@@ -4,38 +4,33 @@ const path = require("path");
 const glob = require('glob');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const TypeScriptDeclarationPlugin = require('typescript-declaration-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV == "production";
 
 const stylesHandler = MiniCssExtractPlugin.loader;
 
-const componentsEntries = glob.sync('./src/components/**/*.ts').reduce((entries, entry) => {
+const componentsEntries = glob.sync('./src/components/**/index.ts').reduce((entries, entry) => {
 	const namePath = path.basename(path.dirname(entry));
-	const componentName = `components/${namePath}`;
+	const componentName = `components/${namePath}/index`;
 	entries[componentName] = `./${entry}`;
 	return entries;
 }, {})
 
 
 const config = {
-	// entry: "./src/index.ts",
-
 	entry: {
-		// index: './src/index.ts',
-		['components/Button']: './src/components/Button/index.ts',
-		// ...componentsEntries
+		index: "./src/index.ts",
+		...componentsEntries,
 	},
-
-	// output: {
-	//   path: path.resolve(__dirname, "dist")
-	// },
+	// entry: {'components/Button/index':'./src/components/Button/index.ts'},
 	output: {
 		filename: '[name].js',
 		path: path.resolve(__dirname, 'dist'),
 		clean: true,
-		// library: 'React Base UI',
-		// libraryTarget: 'umd',
+		library: 'react-base-ui',
+		libraryTarget: 'umd',
+		umdNamedDefine: true,
+
 	},
 	optimization: {
 		minimizer: [
@@ -44,6 +39,10 @@ const config = {
 			})
 		],
 	},
+	externals: {
+		react: 'react',
+		'react-dom': 'react-dom',
+	},
 
 	devServer: {
 		open: true,
@@ -51,10 +50,6 @@ const config = {
 	},
 	plugins: [
 		new MiniCssExtractPlugin(),
-		// new TypeScriptDeclarationPlugin({
-		// 	out: "index.d.ts",
-		// }),
-
 		// Add your plugins here
 		// Learn more about plugins from https://webpack.js.org/configuration/plugins/
 	],
@@ -83,7 +78,7 @@ const config = {
 		]
 	},
 	resolve: {
-		extensions: [".tsx", ".ts", ".jsx", ".js", "..."]
+		extensions: [".tsx", ".ts", ".jsx", ".js"]
 	}
 };
 

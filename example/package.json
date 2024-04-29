@@ -9,10 +9,10 @@
     "dev": "parcel index.html --open"
   },
 	"dependencies": {
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1"
 	},
   "devDependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
 		"@types/react": "^18.3.1",
 		"@types/react-dom": "^18.3.0",
     "parcel": "^2.12.0",
