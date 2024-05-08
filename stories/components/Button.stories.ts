@@ -7,12 +7,16 @@ const meta: Meta<ButtonProps> = {
 	parameters: {
 		layout: 'centered',
 	},
-	argTypes: {
-		onClick: { action: 'clicked' },
-		children: { control: 'text' },
-	},
 	args: {
-		label: 'Button',
+		type: 'button',
+	},
+	argTypes: {
+		children: { control: 'text' },
+		icon: { control: 'text' },
+		onClick: { table: { disable: true } },
+		size: { control: 'inline-radio' },
+		type: { control: 'inline-radio' },
+		variant: { control: 'inline-radio' },
 	},
 	tags: ['autodocs'],
 } satisfies Meta<typeof Button>;
@@ -20,16 +24,66 @@ const meta: Meta<ButtonProps> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
-
-export const WithChildren: Story = {
+export const Default: Story = {
 	args: {
+		label: 'Button',
+	},
+};
+
+export const Size: Story = {
+	args: {
+		label: 'Button',
+		size: 'large',
+	},
+};
+
+export const Children: Story = {
+	args: {
+		label: 'Button',
 		children: 'Children',
 	},
 };
 
-export const WithCustomClassNames: Story = {
+export const Icon: Story = {
 	args: {
+		label: 'Button',
+		icon: 'fa-solid fa-sun',
+	},
+};
+
+export const Severity: Story = {
+	args: {
+		label: 'Button',
+		severity: 'primary',
+	},
+};
+
+export const Variant: Story = {
+	args: {
+		label: 'Button',
+		variant: 'outline',
+	},
+};
+
+export const SeverityAndVariant: Story = {
+	args: {
+		label: 'Button',
+		severity: 'primary',
+		variant: 'outline',
+	},
+};
+
+export const Rounded: Story = {
+	args: {
+		label: 'Button',
+		severity: 'primary',
+		rounded: true,
+	},
+};
+
+export const CustomClassNames: Story = {
+	args: {
+		label: 'Button',
 		byPass: {
 			root: {
 				className: 'custom_button',
