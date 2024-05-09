@@ -3,14 +3,6 @@ import classnames from 'classnames';
 import { useComponentByPass } from '../../hooks/useComponentByPass';
 import type { ButtonProps } from './interfaces';
 
-/**
- * * icon.
- * * style variants (rounded, outline, text)
- * * severity variants
- * * sizes
- * * ? add isLoading state
- */
-
 export const Button: React.FC<ButtonProps> = (props) => {
 	const {
 		ariaLabel,

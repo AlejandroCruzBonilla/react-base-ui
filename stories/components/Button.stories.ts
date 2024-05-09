@@ -7,16 +7,44 @@ const meta: Meta<ButtonProps> = {
 	parameters: {
 		layout: 'centered',
 	},
-	args: {
-		type: 'button',
-	},
 	argTypes: {
 		children: { control: 'text' },
-		icon: { control: 'text' },
-		onClick: { table: { disable: true } },
-		size: { control: 'inline-radio' },
-		type: { control: 'inline-radio' },
-		variant: { control: 'inline-radio' },
+		disabled: {
+			defaultValue: { summary: false },
+		},
+		icon: {
+			control: 'text',
+			table: {
+				type: { summary: 'ReactNode | string' },
+			},
+		},
+		rounded: {
+			defaultValue: { summary: false },
+		},
+		severity: {
+			table: {
+				type: { summary: 'Severity' },
+			},
+		},
+		size: {
+			control: 'inline-radio',
+			table: {
+				type: { summary: 'ButtonSize' },
+			},
+		},
+		type: {
+			control: 'inline-radio',
+			table: {
+				defaultValue: { summary: 'button' },
+				type: { summary: 'ButtonType' },
+			},
+		},
+		variant: {
+			control: 'inline-radio',
+			table: {
+				type: { summary: 'ButtonVariant' },
+			},
+		},
 	},
 	tags: ['autodocs'],
 } satisfies Meta<typeof Button>;
@@ -84,12 +112,16 @@ export const Rounded: Story = {
 export const CustomClassNames: Story = {
 	args: {
 		label: 'Button',
+		icon: 'fa-solid fa-sun',
 		byPass: {
 			root: {
 				className: 'custom_button',
 			},
 			label: {
 				className: 'custom_button_label',
+			},
+			icon: {
+				className: 'custom_button_icon',
 			},
 		},
 	},
