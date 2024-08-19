@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import type { ByPassProps, ByPass, Severity } from '../../interfaces';
+import type { ByPassProps, ByPass, Severity } from '../../../interfaces';
 
 export interface ButtonProps {
 	/** ARIA label for accessibility */

@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import { useComponentByPass } from '../../hooks/useComponentByPass';
+import { useComponentByPass } from '../../../hooks/useComponentByPass';
 import type { ButtonProps } from './interfaces';
 
 export const Button: React.FC<ButtonProps> = (props) => {
