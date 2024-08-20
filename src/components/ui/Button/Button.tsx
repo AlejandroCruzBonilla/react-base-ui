@@ -1,30 +1,30 @@
 import React from 'react';
-import { useComponentByPass } from '../../../hooks/useComponentByPass';
+// import { useComponentByPass } from '../../../hooks/useComponentByPass';
 import type { ButtonProps } from './interfaces';
 
 export const Button: React.FC<ButtonProps> = (props) => {
 	const {
 		ariaLabel,
-		byPass,
+		// byPass,
 		children,
 		disabled = false,
 		icon,
 		label,
 		onClick,
-		rounded = false,
-		severity,
-		size,
+		// rounded = false,
+		// severity,
+		// size,
 		type = 'button',
-		variant,
+		// variant,
 	} = props;
 
-	const { classNames, styles } = useComponentByPass<ButtonProps>(props, byPass);
+	// const { classNames, styles } = useComponentByPass<ButtonProps>(props, byPass);
 
-	const severityVariantClass =
-		severity && variant ? `base-ui__button--${severity}--${variant}`
-		: severity ? `base-ui__button--${severity}`
-		: variant ? `base-ui__button--${variant}`
-		: '';
+	// const severityVariantClass =
+	// 	severity && variant ? `base-ui__button--${severity}--${variant}`
+	// 	: severity ? `base-ui__button--${severity}`
+	// 	: variant ? `base-ui__button--${variant}`
+	// 	: '';
 
 	return (
 		<button
@@ -37,13 +37,13 @@ export const Button: React.FC<ButtonProps> = (props) => {
 			}
 			type={type}
 			onClick={onClick}
-			style={styles['root']}
+			// style={styles['root']}
 			disabled={disabled}
 		>
 			{icon && (
 				<span
 					data-component-section="icon"
-					style={styles['icon']}
+					// style={styles['icon']}
 				>
 					{typeof icon === 'string' ?
 						<i className={icon} />
@@ -53,7 +53,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
 			{label && (
 				<span
 					data-component-section="label"
-					style={styles['label']}
+					// style={styles['label']}
 				>
 					{label}
 				</span>

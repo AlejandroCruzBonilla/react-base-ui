@@ -1,11 +1,41 @@
-:root {
-	--color-primary: #007bff;
-	--color-secondary: #7c7e80;
-	--color-success: #4ade80;
-	--color-info: #38bdf8;
-	--color-warning: #fb923c;
-	--color-help: #c492f5;
-	--color-danger: #dc3545;
-	--color-dark: #1b1c1d;
-	--color-light: #f8f9fa;
+@use '../_sass/functions' as f;
+
+@layer base {
+	:root {
+		// Colors
+		--color-primary: #{f.hexToRgbColors(#62cfff)};
+		--color-primary-foreground: #{f.hexToRgbColors(#082747)};
+		--color-secondary: #{f.hexToRgbColors(#f1f5f9)};
+		--color-secondary-foreground: #{f.hexToRgbColors(#082747)};
+		--color-success: #{f.hexToRgbColors(#c8ffdd)};
+		--color-success-foreground: #{f.hexToRgbColors(#082747)};
+		--color-info: #{f.hexToRgbColors(#90ddff)};
+		--color-info-foreground: #{f.hexToRgbColors(#082747)};
+		--color-warning: #{f.hexToRgbColors(#ffca8b)};
+		--color-warning-foreground: #{f.hexToRgbColors(#082747)};
+		--color-help: #{f.hexToRgbColors(#e4c8ff)};
+		--color-help-foreground: #{f.hexToRgbColors(#082747)};
+		--color-danger: #{f.hexToRgbColors(#ffc5c5)};
+		--color-danger-foreground: #{f.hexToRgbColors(#082747)};
+		--color-dark: #{f.hexToRgbColors(#1b1c1d)};
+		--color-dark-foreground: #{f.hexToRgbColors(#f1f5f9)};
+		--color-light: #{f.hexToRgbColors(#f8f9fa)};
+		--color-light-foreground: #{f.hexToRgbColors(#1b1c1d)};
+
+		// Util Colors
+		--color-background: #{f.hexToRgbColors(#f8f9fa)};
+		--color-foreground: #{f.hexToRgbColors(#1b1c1d)};
+		--color-ring: #{f.hexToRgbColors(#62cfff)};
+		--color-border: #{f.hexToRgbColors(#e2e8f0)};
+		--color-input: #{f.hexToRgbColors(#e2e8f0)};
+
+		// Chart Colors
+
+		.dark {
+			--color-background: #{f.hexToRgbColors(#1b1c1d)};
+			--color-foreground: #{f.hexToRgbColors(#f8f9fa)};
+			--color-border: #{f.hexToRgbColors(#1e293b)};
+			--color-input: #{f.hexToRgbColors(#1e293b)};
+		}
+	}
 }
