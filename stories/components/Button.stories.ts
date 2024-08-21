@@ -15,13 +15,15 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
 	args: {
-		children: 'Button'
+		children: 'Button',
+		variant: 'secondary'
+		// disabled: true,
 	}
 };
 export const Danger: Story = {
 	args: {
 		children: 'Button',
-		variant: 'danger'
+		variant: 'danger',
 	}
 };
 

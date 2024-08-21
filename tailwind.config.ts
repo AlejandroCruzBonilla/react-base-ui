@@ -53,6 +53,10 @@ const config = {
           DEFAULT: "rgb(var(--color-light) / <alpha-value>)",
           foreground: "rgb(var(--color-light-foreground) / <alpha-value>)",
         },
+		accent: {
+          DEFAULT: "rgb(var(--color-accent) / <alpha-value>)",
+          foreground: "rgb(var(--color-accent-foreground) / <alpha-value>)",
+        },
 
 		background: "rgb(var(--color-background) / <alpha-value>)",
         foreground: "rgb(var(--color-foreground) / <alpha-value>)",
@@ -63,10 +67,6 @@ const config = {
         // muted: {
         //   DEFAULT: "hsl(var(--muted))",
         //   foreground: "hsl(var(--muted-foreground))",
-        // },
-        // accent: {
-        //   DEFAULT: "hsl(var(--accent))",
-        //   foreground: "hsl(var(--accent-foreground))",
         // },
         // popover: {
         //   DEFAULT: "hsl(var(--popover))",
