@@ -3,43 +3,43 @@
 @layer base {
 	:root {
 		// Colors
-		--color-primary: #{f.hexToRgbColors(#62cfff)};
-		--color-primary-foreground: #{f.hexToRgbColors(#1b1c1d)};
-		--color-secondary: #{f.hexToRgbColors(#e8eaeb)};
-		--color-secondary-foreground: #{f.hexToRgbColors(#1b1c1d)};
-		--color-success: #{f.hexToRgbColors(#c8ffdd)};
-		--color-success-foreground: #{f.hexToRgbColors(#1b1c1d)};
-		--color-info: #{f.hexToRgbColors(#90ddff)};
-		--color-info-foreground: #{f.hexToRgbColors(#1b1c1d)};
-		--color-warning: #{f.hexToRgbColors(#ffca8b)};
-		--color-warning-foreground: #{f.hexToRgbColors(#1b1c1d)};
-		--color-help: #{f.hexToRgbColors(#e4c8ff)};
-		--color-help-foreground: #{f.hexToRgbColors(#1b1c1d)};
+		--color-primary: #{f.hexToRgbColors(#62CFFF)};
+		--color-primary-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-secondary: #{f.hexToRgbColors(#DFE6E9)};
+		--color-secondary-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-success: #{f.hexToRgbColors(#9DFFC2)};
+		--color-success-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-info: #{f.hexToRgbColors(#90DDFF)};
+		--color-info-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-warning: #{f.hexToRgbColors(#FFCA8B)};
+		--color-warning-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-help: #{f.hexToRgbColors(#E4C8FF)};
+		--color-help-foreground: #{f.hexToRgbColors(#1B1C1D)};
 		--color-danger: #{f.hexToRgbColors(#FF9292)};
-		--color-danger-foreground: #{f.hexToRgbColors(#1b1c1d)};
-		--color-light: #{f.hexToRgbColors(#f8f9fa)};
-		--color-light-foreground: #{f.hexToRgbColors(#1b1c1d)};
-		--color-dark: #{f.hexToRgbColors(#1b1c1d)};
-		--color-dark-foreground: #{f.hexToRgbColors(#f8f9fa)};
+		--color-danger-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-light: #{f.hexToRgbColors(#F8F9FA)};
+		--color-light-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-dark: #{f.hexToRgbColors(#1B1C1D)};
+		--color-dark-foreground: #{f.hexToRgbColors(#F8F9FA)};
 
-		--color-background: #{f.hexToRgbColors(#f8f9fa)};
-		--color-foreground: #{f.hexToRgbColors(#1b1c1d)};
+		--color-background: #{f.hexToRgbColors(#F8F9FA)};
+		--color-foreground: #{f.hexToRgbColors(#1B1C1D)};
 		
-		--color-accent: #{f.hexToRgbColors(#e8eaeb)};
-		--color-accent-foreground: #{f.hexToRgbColors(#1b1c1d)};
+		--color-accent: #{f.hexToRgbColors(#DFE6E9)};
+		--color-accent-foreground: #{f.hexToRgbColors(#1B1C1D)};
 
 		// Util Colors
-		--color-border: #{f.hexToRgbColors(#e8eaeb)};
-		--color-input: #{f.hexToRgbColors(#e8eaeb)};
+		--color-border: #{f.hexToRgbColors(#DFE6E9)};
+		--color-input: #{f.hexToRgbColors(#DFE6E9)};
 
 		// Chart Colors
 
 		.dark {
-			--color-background: #{f.hexToRgbColors(#1b1c1d)};
-			--color-foreground: #{f.hexToRgbColors(#f8f9fa)};
+			--color-background: #{f.hexToRgbColors(#1B1C1D)};
+			--color-foreground: #{f.hexToRgbColors(#F8F9FA)};
 
 			--color-accent: #{f.hexToRgbColors(#333333)};
-			--color-accent-foreground: #{f.hexToRgbColors(#f8f9fa)};
+			--color-accent-foreground: #{f.hexToRgbColors(#F8F9FA)};
 
 			// Util Colors
 			--color-border: #{f.hexToRgbColors(#333333)};
