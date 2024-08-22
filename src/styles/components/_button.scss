@@ -1,45 +1,93 @@
 @layer components {
-	.rbui-button {
-		@apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+	.rui-button {
+		@apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
 
-		&-primary {
-			@apply bg-primary text-primary-foreground hover:bg-primary/85;
+		&-default {
+			&-primary {
+				@apply bg-primary text-primary-foreground hover:bg-primary/85 focus-visible:ring-primary;
+			}
+
+			&-secondary {
+				@apply bg-secondary text-secondary-foreground hover:bg-secondary/85 focus-visible:ring-secondary;
+			}
+
+			&-success {
+				@apply bg-success text-success-foreground hover:bg-success/85 focus-visible:ring-success;
+			}
+
+			&-info {
+				@apply bg-info text-info-foreground hover:bg-info/85 focus-visible:ring-info;
+			}
+
+			&-warning {
+				@apply bg-warning text-warning-foreground hover:bg-warning/85  focus-visible:ring-warning;
+			}
+
+			&-help {
+				@apply bg-help text-help-foreground hover:bg-help/85 focus-visible:ring-help;
+			}
+
+			&-danger {
+				@apply bg-danger text-danger-foreground hover:bg-danger/85  focus-visible:ring-danger;
+			}
+
+			&-dark {
+				@apply bg-dark text-dark-foreground hover:bg-dark/85  focus-visible:ring-dark;
+			}
+
+			&-light {
+				@apply bg-light text-light-foreground hover:bg-light/85  focus-visible:ring-light;
+			}
+
+			&-ghost {
+				@apply text-accent-foreground hover:bg-accent hover:text-accent-foreground  focus-visible:ring-accent;
+			}
 		}
 
-		&-secondary {
-			@apply bg-secondary text-secondary-foreground hover:bg-secondary/85;
-		}
+		&-outline {
+			&-primary {
+				@apply border border-input bg-background hover:bg-accent hover:text-accent-foreground;
+			}
 
-		&-success {
-			@apply bg-success text-success-foreground hover:bg-success/85;
-		}
+			&-secondary {
+				@apply bg-secondary text-secondary-foreground hover:bg-secondary/85;
+			}
 
-		&-info {
-			@apply bg-info text-info-foreground hover:bg-info/85;
-		}
+			&-success {
+				@apply bg-success text-success-foreground hover:bg-success/85;
+			}
 
-		&-warning {
-			@apply bg-warning text-warning-foreground hover:bg-warning/85;
-		}
+			&-info {
+				@apply bg-info text-info-foreground hover:bg-info/85;
+			}
 
-		&-help {
-			@apply bg-help text-help-foreground hover:bg-help/85;
-		}
+			&-warning {
+				@apply bg-warning text-warning-foreground hover:bg-warning/85;
+			}
 
-		&-danger {
-			@apply bg-danger text-danger-foreground hover:bg-danger/85;
-		}
+			&-help {
+				@apply bg-help text-help-foreground hover:bg-help/85;
+			}
 
-		&-dark {
-			@apply bg-dark text-dark-foreground hover:bg-dark/85;
-		}
-		
-		&-light {
-			@apply bg-light text-light-foreground hover:bg-light/85;
-		}
-		
-		&-ghost {
-			@apply hover:bg-accent hover:text-accent-foreground;
+			&-danger {
+				@apply bg-danger text-danger-foreground hover:bg-danger/85;
+			}
+
+			&-dark {
+				@apply bg-dark text-dark-foreground hover:bg-dark/85;
+			}
+
+			&-light {
+				@apply bg-light text-light-foreground hover:bg-light/85;
+			}
+
+			&-ghost {
+				@apply hover:bg-accent hover:text-accent-foreground;
+			}
+
+			&-outline {
+				@apply border border-input bg-background hover:bg-accent hover:text-accent-foreground;
+			}
 		}
 	}
 }

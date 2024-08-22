@@ -14,7 +14,7 @@ export type ByPassClassNameProp<T> = string | ((props: T) => string);
 export type ByPassStyleProp = CSSProperties;
 
 export type Severity =
-	| 'primary'
+	| 'default'
 	| 'secondary'
 	| 'success'
 	| 'info'
@@ -22,4 +22,5 @@ export type Severity =
 	| 'help'
 	| 'danger'
 	| 'dark'
-	| 'light';
+	| 'light'
+	| 'ghost'
