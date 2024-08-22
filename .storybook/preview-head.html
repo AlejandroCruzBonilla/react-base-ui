@@ -2,3 +2,35 @@
 	rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 >
+<style>
+	body {
+		flex-direction: column;
+		background-color: rgb(var(--color-background));
+
+		.docs-story {
+			background-color: rgb(var(--color-background));
+		}
+
+		.button__dark-mode {
+			background-color: rgb(var(--color-foreground));
+			border-radius: 5px;
+			color: rgb(var(--color-background));
+			display: inline-flex;
+			margin: 5px;
+			padding: 5px 8px;
+		}
+	}
+</style>
+<script type="module">
+	const body = document.body;
+	const button = document.createElement('button');
+	button.classList.add('button__dark-mode')
+	button.innerText = body.classList.contains('dark') ? 'Dark' : 'Light'
+	button.addEventListener('click', () => {
+		body.classList.toggle('dark')
+		button.innerText = body.classList.contains('dark') ? 'Dark' : 'Light'
+	})
+
+	body.insertBefore(button, body.firstChild);
+
+</script>
