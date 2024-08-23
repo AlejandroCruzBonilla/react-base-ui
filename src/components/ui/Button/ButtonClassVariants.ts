@@ -9,6 +9,7 @@ const variant = {
 	outline: '',
 	link: '',
 }
+
 const severity = {
 	default: '',
 	secondary: '',
@@ -47,6 +48,7 @@ export const buttonVariants = cva('rui-button', {
 		{variant: 'default', severity: 'dark', 		class: 'rui-button-default-dark'},
 		{variant: 'default', severity: 'light', 	class: 'rui-button-default-light'},
 		{variant: 'default', severity: 'ghost', 	class: 'rui-button-default-ghost'},
+		
 		// Outline
 		{variant: 'outline', severity: 'default', 	class: 'rui-button-outline-primary'},
 		{variant: 'outline', severity: 'secondary', class: 'rui-button-outline-secondary'},
@@ -58,6 +60,18 @@ export const buttonVariants = cva('rui-button', {
 		{variant: 'outline', severity: 'dark', 		class: 'rui-button-outline-dark'},
 		{variant: 'outline', severity: 'light', 	class: 'rui-button-outline-light'},
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-button-outline-ghost'},
+		
+		// Outline
+		{variant: 'link', severity: 'default', 	 class: 'rui-button-link-primary'},
+		{variant: 'link', severity: 'secondary', class: 'rui-button-link-secondary'},
+		{variant: 'link', severity: 'success', 	 class: 'rui-button-link-success'},
+		{variant: 'link', severity: 'info', 	 class: 'rui-button-link-info'},
+		{variant: 'link', severity: 'warning', 	 class: 'rui-button-link-warning'},
+		{variant: 'link', severity: 'help', 	 class: 'rui-button-link-help'},
+		{variant: 'link', severity: 'danger', 	 class: 'rui-button-link-danger'},
+		{variant: 'link', severity: 'dark', 	 class: 'rui-button-link-dark'},
+		{variant: 'link', severity: 'light', 	 class: 'rui-button-link-light'},
+		{variant: 'link', severity: 'ghost', 	 class: 'rui-button-link-ghost'},
 	],
 	defaultVariants: {
 		severity: 'default',
