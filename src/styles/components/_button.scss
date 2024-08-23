@@ -146,7 +146,7 @@
 		}
 
 		&-raised {
-			@apply shadow-raised;
+			@apply shadow-raised hover:shadow-none;
 		}
 
 		&-rounded {

@@ -9,7 +9,7 @@ const meta: Meta<ButtonProps> = {
 	component: Button,
 	parameters: {
 		layout: 'centered',
-		controls: { expanded: true,sort: 'alpha' },
+		controls: { expanded: true, sort: 'alpha' },
 	},
 	argTypes: {
 		variant: {
@@ -41,12 +41,7 @@ const meta: Meta<ButtonProps> = {
 		},
 		size: {
 			control: 'select',
-			options: [
-				'default',
-				'sm',
-				'lg',
-				'icon',
-			],
+			options: ['default', 'sm', 'lg', 'icon'],
 			table: {
 				defaultValue: { summary: 'default' },
 				type: { summary: 'ButtonSize' },
@@ -75,10 +70,13 @@ const meta: Meta<ButtonProps> = {
 		},
 	},
 	args: {
+		children: 'Button',
 		disabled: false,
 		raised: false,
 		rounded: false,
-		children: 'Button'
+		severity: 'default',
+		size: 'default',
+		variant: 'default',
 	},
 	tags: ['autodocs'],
 } satisfies Meta<typeof Button>;
