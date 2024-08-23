@@ -1,36 +1,51 @@
-Components
-
+INFO: BackLog
 Accordion
+Avatar
 Backdrop
 BreadCrumbs
-Button
 ButtonGroup
+ButtonMenu
 Card
-Chip
 ConfirmDialog
 Dialog
-Divider
 FieldSet
 FloatingButton
 FloatingButtonGroup
 Menu
 MenuBar
 MenuTree
-Message
 NavBar
 Paginator
 Panel
 ScrollTopButton
 SideBar
-Skeleton
 Spinner
 Stepper
 SwitchMenu
 Table
 Tabs
-Tag
 TimeLine
 Toast
 ToggleButton
 ToggleButtonGroup
 Toolbar
+
+ 
+TODO: Próximos Componentes
+Tag
+Message
+Alert | Messages
+Skeleton
+Divider
+Avatar
+-
+Badge
+Chip
+Tooltip
+-
+
+READY: Componentes Listos
+Button
+
+
+FIXME: Componentes para Arreglar
