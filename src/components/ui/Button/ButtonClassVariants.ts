@@ -1,33 +1,29 @@
 import { cva } from 'class-variance-authority';
 
-
-// link: 'text-primary underline-offset-4 hover:underline',
-
-
 const variant = {
-	default: '',
-	outline: '',
-	link: '',
+	default: true,
+	outline: true,
+	link: true,
 }
 
 const severity = {
-	default: '',
-	secondary: '',
-	success: '',
-	info: '',
-	warning: '',
-	help: '',
-	danger: '',
-	dark: '',
-	light: '',
-	ghost: '',
+	default: true,
+	secondary: true,
+	success: true,
+	info: true,
+	warning: true,
+	help: true,
+	danger: true,
+	dark: true,
+	light: true,
+	ghost: true,
 }
 
 const size ={
-	default: 'h-10 px-4 py-2',
-	sm: 'h-9 rounded-md px-3',
-	lg: 'h-11 rounded-md px-8',
-	icon: 'h-10 w-10',
+	default:'rui-button-size-default',
+	sm:		'rui-button-size-sm',
+	lg: 	'rui-button-size-lg',
+	icon:	'rui-button-size-icon',
 }
 
 export const buttonVariants = cva('rui-button', {
@@ -37,7 +33,7 @@ export const buttonVariants = cva('rui-button', {
 		size,
 	},
 	compoundVariants: [
-		// Default
+		// * Default
 		{variant: 'default', severity: 'default', 	class: 'rui-button-default-primary'},
 		{variant: 'default', severity: 'secondary', class: 'rui-button-default-secondary'},
 		{variant: 'default', severity: 'success', 	class: 'rui-button-default-success'},
@@ -49,10 +45,10 @@ export const buttonVariants = cva('rui-button', {
 		{variant: 'default', severity: 'light', 	class: 'rui-button-default-light'},
 		{variant: 'default', severity: 'ghost', 	class: 'rui-button-default-ghost'},
 		
-		// Outline
+		// * Outline
 		{variant: 'outline', severity: 'default', 	class: 'rui-button-outline-primary'},
-		{variant: 'outline', severity: 'secondary', class: 'rui-button-outline-secondary'},
-		{variant: 'outline', severity: 'success', 	class: 'rui-button-outline-success'},
+		{variant: 'outline', severity: 'secondary',	class: 'rui-button-outline-secondary'},
+		{variant: 'outline', severity: 'success',	class: 'rui-button-outline-success'},
 		{variant: 'outline', severity: 'info', 		class: 'rui-button-outline-info'},
 		{variant: 'outline', severity: 'warning', 	class: 'rui-button-outline-warning'},
 		{variant: 'outline', severity: 'help', 		class: 'rui-button-outline-help'},
@@ -61,7 +57,7 @@ export const buttonVariants = cva('rui-button', {
 		{variant: 'outline', severity: 'light', 	class: 'rui-button-outline-light'},
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-button-outline-ghost'},
 		
-		// Outline
+		//* Outline
 		{variant: 'link', severity: 'default', 	 class: 'rui-button-link-primary'},
 		{variant: 'link', severity: 'secondary', class: 'rui-button-link-secondary'},
 		{variant: 'link', severity: 'success', 	 class: 'rui-button-link-success'},

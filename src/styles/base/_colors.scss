@@ -2,7 +2,7 @@
 
 @layer base {
 	:root {
-		// Colors
+		// * Colors
 		--color-primary: #{f.hexToRgbColors(#62CFFF)};
 		--color-primary-foreground: #{f.hexToRgbColors(#1B1C1D)};
 		--color-secondary: #{f.hexToRgbColors(#4b5563)};
@@ -28,11 +28,11 @@
 		--color-accent: #{f.hexToRgbColors(#DFE6E9)};
 		--color-accent-foreground: #{f.hexToRgbColors(#1B1C1D)};
 
-		// Util Colors
+		// * Util Colors
 		--color-border: #{f.hexToRgbColors(#DFE6E9)};
 		--color-input: #{f.hexToRgbColors(#DFE6E9)};
 
-		// Chart Colors
+		// * Chart Colors
 
 		.dark {
 			--color-background: #{f.hexToRgbColors(#1B1C1D)};
@@ -41,7 +41,7 @@
 			--color-accent: #{f.hexToRgbColors(#333333)};
 			--color-accent-foreground: #{f.hexToRgbColors(#F8F9FA)};
 
-			// Util Colors
+			// * Util Colors
 			--color-border: #{f.hexToRgbColors(#333333)};
 			--color-input: #{f.hexToRgbColors(#333333)};
 		}

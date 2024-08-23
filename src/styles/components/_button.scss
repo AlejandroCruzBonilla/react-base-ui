@@ -1,42 +1,43 @@
 @layer components {
 	.rui-button {
 		@apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-semibold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
-
+		
+		// * Variants & Severity
 		&-default {
 			&-primary {
-				@apply bg-primary text-primary-foreground hover:bg-primary/85 focus-visible:ring-primary;
+				@apply bg-primary text-primary-foreground hover:bg-primary/80 focus-visible:ring-primary;
 			}
 
 			&-secondary {
-				@apply bg-secondary text-secondary-foreground hover:bg-secondary/85 focus-visible:ring-secondary;
+				@apply bg-secondary text-secondary-foreground hover:bg-secondary/80 focus-visible:ring-secondary;
 			}
 
 			&-success {
-				@apply bg-success text-success-foreground hover:bg-success/85 focus-visible:ring-success;
+				@apply bg-success text-success-foreground hover:bg-success/80 focus-visible:ring-success;
 			}
 
 			&-info {
-				@apply bg-info text-info-foreground hover:bg-info/85 focus-visible:ring-info;
+				@apply bg-info text-info-foreground hover:bg-info/80 focus-visible:ring-info;
 			}
 
 			&-warning {
-				@apply bg-warning text-warning-foreground hover:bg-warning/85  focus-visible:ring-warning;
+				@apply bg-warning text-warning-foreground hover:bg-warning/80  focus-visible:ring-warning;
 			}
 
 			&-help {
-				@apply bg-help text-help-foreground hover:bg-help/85 focus-visible:ring-help;
+				@apply bg-help text-help-foreground hover:bg-help/80 focus-visible:ring-help;
 			}
 
 			&-danger {
-				@apply bg-danger text-danger-foreground hover:bg-danger/85  focus-visible:ring-danger;
+				@apply bg-danger text-danger-foreground hover:bg-danger/80  focus-visible:ring-danger;
 			}
 
 			&-dark {
-				@apply bg-dark text-dark-foreground hover:bg-dark/85  focus-visible:ring-dark;
+				@apply bg-dark text-dark-foreground hover:bg-dark/80  focus-visible:ring-dark;
 			}
 
 			&-light {
-				@apply bg-light text-light-foreground hover:bg-light/85  focus-visible:ring-light;
+				@apply bg-light text-light-foreground hover:bg-light/80  focus-visible:ring-light;
 			}
 
 			&-ghost {
@@ -82,7 +83,7 @@
 			}
 
 			&-ghost {
-				@apply border border-transparent hover:border-accent-foreground/20 hover:bg-accent-foreground/10 text-accent-foreground focus-visible:ring-accent;
+				@apply border border-transparent hover:border-accent-foreground/10 hover:bg-accent-foreground/10 text-accent-foreground focus-visible:ring-accent;
 			}
 		}
 
@@ -125,6 +126,22 @@
 
 			&-ghost {
 				@apply text-foreground underline-offset-4 hover:underline hover:bg-accent-foreground/10 focus-visible:ring-accent-foreground;
+			}
+		}
+
+		// * Sizes
+		&-size {
+			&-default {
+				@apply h-10 px-4 py-2;
+			}
+			&-sm {
+				@apply h-9 rounded-md px-3;
+			}
+			&-lg {
+				@apply h-11 rounded-md px-8;
+			}
+			&-icon {
+				@apply h-10 w-10;
 			}
 		}
 	}
