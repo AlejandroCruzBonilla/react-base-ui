@@ -9,6 +9,7 @@ const meta: Meta<ButtonProps> = {
 	component: Button,
 	parameters: {
 		layout: 'centered',
+		controls: { expanded: true,sort: 'alpha' },
 	},
 	argTypes: {
 		variant: {
@@ -51,6 +52,33 @@ const meta: Meta<ButtonProps> = {
 				type: { summary: 'ButtonSize' },
 			},
 		},
+		raised: {
+			control: 'boolean',
+			table: {
+				defaultValue: { summary: 'false' },
+				type: { summary: 'boolean' },
+			},
+		},
+		rounded: {
+			control: 'boolean',
+			table: {
+				defaultValue: { summary: 'false' },
+				type: { summary: 'boolean' },
+			},
+		},
+		disabled: {
+			control: 'boolean',
+			table: {
+				defaultValue: { summary: 'false' },
+				type: { summary: 'boolean' },
+			},
+		},
+	},
+	args: {
+		disabled: false,
+		raised: false,
+		rounded: false,
+		children: 'Button'
 	},
 	tags: ['autodocs'],
 } satisfies Meta<typeof Button>;
@@ -58,8 +86,4 @@ const meta: Meta<ButtonProps> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
-	args: {
-        children: 'Button',
-    },
-};
+export const Default: Story = {};

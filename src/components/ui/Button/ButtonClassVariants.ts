@@ -26,11 +26,23 @@ const size ={
 	icon:	'rui-button-size-icon',
 }
 
+const raised = {
+	true: 'rui-button-raised',
+	false: ''
+}
+
+const rounded = {
+	true: 'rui-button-rounded',
+	false: ''
+}
+
 export const buttonVariants = cva('rui-button', {
 	variants: {
 		variant,
 		severity,
 		size,
+		raised,
+		rounded,
 	},
 	compoundVariants: [
 		// * Default
@@ -73,6 +85,8 @@ export const buttonVariants = cva('rui-button', {
 		severity: 'default',
 		variant: 'default',
 		size: 'default',
+		raised: false,
+		rounded: false,
 	},
 });
 
@@ -80,3 +94,5 @@ export type ButtonClassVariantProps = typeof buttonVariants;
 export type ButtonVariant = keyof typeof variant;
 export type ButtonSeverity = keyof typeof severity;
 export type ButtonSize = keyof typeof size;
+export type ButtonRaised = keyof typeof raised;
+export type ButtonRounded = keyof typeof rounded;
