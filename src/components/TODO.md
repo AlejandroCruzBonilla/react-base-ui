@@ -32,7 +32,7 @@ Toolbar
 
  
 TODO: Próximos Componentes
-Tag
+
 Message
 Alert | Messages
 Skeleton
@@ -43,11 +43,13 @@ Chip
 Tooltip
 
 TODO: Editar comportamiento
+Button - Add props: icon,iconPosition label
+Tag- Add props: icon, iconPosition, 
 Badge - Position para que se muestre como un super indice
 
 
 READY: Componentes Listos
-Button
+
 
 
 FIXME: Componentes para Arreglar
