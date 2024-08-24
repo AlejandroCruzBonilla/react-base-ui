@@ -50,9 +50,15 @@ const meta: Meta<BadgeProps> = {
 				type: { summary: 'boolean' },
 			},
 		},
+		children: {
+			table: {
+				type: { summary: 'ReactNode' }
+			}
+		}
 	},
 	args: {
 		children: '10',
+		value: '50',
 		raised: false,
 		rounded: false,
 		severity: 'default',

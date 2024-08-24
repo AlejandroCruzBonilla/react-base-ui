@@ -6,10 +6,12 @@ import { badgeVariants } from './BadgeClassVariants';
 
 interface BadgeProps
 	extends React.HTMLAttributes<HTMLDivElement>,
-		VariantProps<typeof badgeVariants> {}
+		VariantProps<typeof badgeVariants> {
+	value?: string;
+}
 
 const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
-	({ className, raised, rounded, severity, variant, ...props }, ref) => {
+	({ className, raised, rounded, severity, variant, value, children, ...props }, ref) => {
 		return (
 			<div
 				ref={ref}
@@ -24,7 +26,9 @@ const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
 					className,
 				)}
 				{...props}
-			/>
+			>
+				{ value ? value : children}
+			</div>
 		);
 	},
 );
