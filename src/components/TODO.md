@@ -39,10 +39,12 @@ Skeleton
 Divider
 Avatar
 -
-Badge
 Chip
 Tooltip
--
+
+TODO: Editar comportamiento
+Badge - children | value
+
 
 READY: Componentes Listos
 Button
