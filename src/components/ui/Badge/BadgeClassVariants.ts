@@ -3,7 +3,6 @@ import { cva } from 'class-variance-authority';
 const variant = {
 	default: true,
 	outline: true,
-	link: true,
 }
 
 const severity = {
@@ -18,7 +17,6 @@ const severity = {
 	light: true,
 	ghost: true,
 }
-
 
 const raised = {
 	true: 'rui-badge-raised',

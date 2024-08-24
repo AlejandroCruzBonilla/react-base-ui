@@ -70,7 +70,7 @@ const meta: Meta<ButtonProps> = {
 		},
 	},
 	args: {
-		children: 'Button',
+		children: 'React Node',
 		disabled: false,
 		raised: false,
 		rounded: false,

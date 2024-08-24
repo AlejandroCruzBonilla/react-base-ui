@@ -57,7 +57,7 @@ const meta: Meta<BadgeProps> = {
 		}
 	},
 	args: {
-		children: '10',
+		children: 'React Node',
 		value: '50',
 		raised: false,
 		rounded: false,
