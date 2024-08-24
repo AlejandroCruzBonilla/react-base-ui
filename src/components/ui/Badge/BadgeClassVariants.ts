@@ -19,12 +19,6 @@ const severity = {
 	ghost: true,
 }
 
-const size ={
-	default:'rui-badge-size-default',
-	sm:		'rui-badge-size-sm',
-	lg: 	'rui-badge-size-lg',
-	icon:	'rui-badge-size-icon',
-}
 
 const raised = {
 	true: 'rui-badge-raised',
@@ -40,7 +34,6 @@ export const badgeVariants = cva('rui-badge', {
 	variants: {
 		variant,
 		severity,
-		size,
 		raised,
 		rounded,
 	},
@@ -68,23 +61,10 @@ export const badgeVariants = cva('rui-badge', {
 		{variant: 'outline', severity: 'dark', 		class: 'rui-badge-outline-dark'},
 		{variant: 'outline', severity: 'light', 	class: 'rui-badge-outline-light'},
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-badge-outline-ghost'},
-		
-		//* Outline
-		{variant: 'link', severity: 'default', 	 class: 'rui-badge-link-primary'},
-		{variant: 'link', severity: 'secondary', class: 'rui-badge-link-secondary'},
-		{variant: 'link', severity: 'success', 	 class: 'rui-badge-link-success'},
-		{variant: 'link', severity: 'info', 	 class: 'rui-badge-link-info'},
-		{variant: 'link', severity: 'warning', 	 class: 'rui-badge-link-warning'},
-		{variant: 'link', severity: 'help', 	 class: 'rui-badge-link-help'},
-		{variant: 'link', severity: 'danger', 	 class: 'rui-badge-link-danger'},
-		{variant: 'link', severity: 'dark', 	 class: 'rui-badge-link-dark'},
-		{variant: 'link', severity: 'light', 	 class: 'rui-badge-link-light'},
-		{variant: 'link', severity: 'ghost', 	 class: 'rui-badge-link-ghost'},
 	],
 	defaultVariants: {
 		severity: 'default',
 		variant: 'default',
-		size: 'default',
 		raised: false,
 		rounded: false,
 	},
@@ -93,6 +73,5 @@ export const badgeVariants = cva('rui-badge', {
 export type BadgeClassVariantProps = typeof badgeVariants;
 export type BadgeVariant = keyof typeof variant;
 export type BadgeSeverity = keyof typeof severity;
-export type BadgeSize = keyof typeof size;
 export type BadgeRaised = keyof typeof raised;
 export type BadgeRounded = keyof typeof rounded;

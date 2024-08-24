@@ -14,7 +14,7 @@ const meta: Meta<BadgeProps> = {
 	argTypes: {
 		variant: {
 			control: 'select',
-			options: ['default', 'outline', 'link'],
+			options: ['default', 'outline'],
 			table: {
 				defaultValue: { summary: 'default' },
 				type: { summary: 'BadgeVariant' },
@@ -39,14 +39,6 @@ const meta: Meta<BadgeProps> = {
 				type: { summary: 'BadgeSeverity' },
 			},
 		},
-		size: {
-			control: 'select',
-			options: ['default', 'sm', 'lg', 'icon'],
-			table: {
-				defaultValue: { summary: 'default' },
-				type: { summary: 'BadgeSize' },
-			},
-		},
 		raised: {
 			control: 'boolean',
 			table: {
@@ -63,11 +55,10 @@ const meta: Meta<BadgeProps> = {
 		},
 	},
 	args: {
-		children: 'Badge',
+		children: '10',
 		raised: false,
 		rounded: false,
 		severity: 'default',
-		size: 'default',
 		variant: 'default',
 	},
 	tags: ['autodocs'],

@@ -69,7 +69,7 @@ export const buttonVariants = cva('rui-button', {
 		{variant: 'outline', severity: 'light', 	class: 'rui-button-outline-light'},
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-button-outline-ghost'},
 		
-		//* Outline
+		// * Link
 		{variant: 'link', severity: 'default', 	 class: 'rui-button-link-primary'},
 		{variant: 'link', severity: 'secondary', class: 'rui-button-link-secondary'},
 		{variant: 'link', severity: 'success', 	 class: 'rui-button-link-success'},

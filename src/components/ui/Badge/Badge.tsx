@@ -9,7 +9,7 @@ interface BadgeProps
 		VariantProps<typeof badgeVariants> {}
 
 const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
-	({ className, raised, rounded, severity, size, variant, ...props }, ref) => {
+	({ className, raised, rounded, severity, variant, ...props }, ref) => {
 		return (
 			<div
 				ref={ref}
@@ -17,7 +17,6 @@ const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
 					badgeVariants({
 						variant,
 						severity,
-						size,
 						raised,
 						rounded,
 						className,
