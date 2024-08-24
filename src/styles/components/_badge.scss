@@ -1,6 +1,15 @@
 @layer components {
 	.rui-badge {
-		@apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-semibold transition-colors min-w-6 h-6 px-1;
+		@apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-semibold transition-colors;
+
+		&:not(:empty) {
+			@apply min-w-6 h-6 px-1;
+		}
+
+		&:empty {
+			@apply p-1;
+		}
+
 
 		// * Variants & Severity
 		&-default {

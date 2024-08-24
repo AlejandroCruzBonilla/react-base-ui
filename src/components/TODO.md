@@ -43,7 +43,7 @@ Chip
 Tooltip
 
 TODO: Editar comportamiento
-Badge - children | value
+Badge - Position para que se muestre como un super indice
 
 
 READY: Componentes Listos
