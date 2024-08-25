@@ -41,7 +41,7 @@
 			}
 
 			&-ghost {
-				@apply text-accent-foreground hover:bg-accent hover:text-accent-foreground;
+				@apply text-background-foreground hover:bg-background-foreground/10;
 			}
 		}
 
@@ -83,49 +83,49 @@
 			}
 
 			&-ghost {
-				@apply border border-transparent hover:border-accent-foreground/10 hover:bg-accent-foreground/10 text-accent-foreground;
+				@apply border border-transparent hover:border-background-foreground/10 hover:bg-background-foreground/10 text-background-foreground;
 			}
 		}
 
 		&-link {
 			&-primary {
-				@apply text-primary underline-offset-4 hover:underline hover:bg-primary/10 focus-visible:ring-primary;
+				@apply text-primary underline-offset-4 hover:underline hover:bg-primary/10;
 			}
 
 			&-secondary {
-				@apply text-secondary underline-offset-4 hover:underline hover:bg-secondary/10 focus-visible:ring-secondary;
+				@apply text-secondary underline-offset-4 hover:underline hover:bg-secondary/10;
 			}
 
 			&-success {
-				@apply text-success underline-offset-4 hover:underline hover:bg-success/10 focus-visible:ring-success;
+				@apply text-success underline-offset-4 hover:underline hover:bg-success/10;
 			}
 
 			&-info {
-				@apply text-info underline-offset-4 hover:underline hover:bg-info/10 focus-visible:ring-info;
+				@apply text-info underline-offset-4 hover:underline hover:bg-info/10;
 			}
 
 			&-warning {
-				@apply text-warning underline-offset-4 hover:underline hover:bg-warning/10 focus-visible:ring-warning;
+				@apply text-warning underline-offset-4 hover:underline hover:bg-warning/10;
 			}
 
 			&-help {
-				@apply text-help underline-offset-4 hover:underline hover:bg-help/10 focus-visible:ring-help;
+				@apply text-help underline-offset-4 hover:underline hover:bg-help/10;
 			}
 
 			&-danger {
-				@apply text-danger underline-offset-4 hover:underline hover:bg-danger/10 focus-visible:ring-danger;
+				@apply text-danger underline-offset-4 hover:underline hover:bg-danger/10;
 			}
 
 			&-dark {
-				@apply text-dark underline-offset-4 hover:underline hover:bg-dark/10 focus-visible:ring-dark;
+				@apply text-dark underline-offset-4 hover:underline hover:bg-dark/10;
 			}
 
 			&-light {
-				@apply text-light underline-offset-4 hover:underline hover:bg-light/10 focus-visible:ring-light;
+				@apply text-light underline-offset-4 hover:underline hover:bg-light/10;
 			}
 
 			&-ghost {
-				@apply text-foreground underline-offset-4 hover:underline hover:bg-accent-foreground/10 focus-visible:ring-accent-foreground;
+				@apply text-background-foreground underline-offset-4 hover:underline hover:bg-background-foreground/10;
 			}
 		}
 

@@ -41,7 +41,7 @@
 			}
 
 			&-ghost {
-				@apply text-accent-foreground hover:bg-accent hover:text-accent-foreground  focus-visible:ring-accent;
+				@apply text-background-foreground hover:bg-background-foreground/10 focus-visible:ring-background-foreground/10;
 			}
 		}
 
@@ -83,7 +83,7 @@
 			}
 
 			&-ghost {
-				@apply border border-transparent hover:border-accent-foreground/10 hover:bg-accent-foreground/10 text-accent-foreground focus-visible:ring-accent;
+				@apply border border-transparent hover:border-background-foreground/10 hover:bg-background-foreground/10 text-background-foreground focus-visible:ring-background-foreground/10;
 			}
 		}
 
@@ -125,7 +125,7 @@
 			}
 
 			&-ghost {
-				@apply text-foreground underline-offset-4 hover:underline hover:bg-accent-foreground/10 focus-visible:ring-accent-foreground;
+				@apply text-background-foreground underline-offset-4 hover:underline hover:bg-background-foreground/10 focus-visible:ring-background-foreground/10;
 			}
 		}
 

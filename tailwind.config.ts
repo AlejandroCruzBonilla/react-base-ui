@@ -20,46 +20,54 @@ const config = {
         primary: {
           DEFAULT: "rgb(var(--color-primary) / <alpha-value>)",
           foreground: "rgb(var(--color-primary-foreground) / <alpha-value>)",
+		  accent: "rgb(var(--color-primary-accent) / <alpha-value>)",
         },
         secondary: {
           DEFAULT: "rgb(var(--color-secondary) / <alpha-value>)",
           foreground: "rgb(var(--color-secondary-foreground) / <alpha-value>)",
+		  accent: "rgb(var(--color-secondary-accent) / <alpha-value>)",
         },
         success: {
           DEFAULT: "rgb(var(--color-success) / <alpha-value>)",
           foreground: "rgb(var(--color-success-foreground) / <alpha-value>)",
+		  accent: "rgb(var(--color-success-accent) / <alpha-value>)",
         },
         info: {
           DEFAULT: "rgb(var(--color-info) / <alpha-value>)",
           foreground: "rgb(var(--color-info-foreground) / <alpha-value>)",
+		  accent: "rgb(var(--color-info-accent) / <alpha-value>)",
         },
         warning: {
           DEFAULT: "rgb(var(--color-warning) / <alpha-value>)",
           foreground: "rgb(var(--color-warning-foreground) / <alpha-value>)",
+		  accent: "rgb(var(--color-warning-accent) / <alpha-value>)",
         },
         help: {
           DEFAULT: "rgb(var(--color-help) / <alpha-value>)",
           foreground: "rgb(var(--color-help-foreground) / <alpha-value>)",
+		  accent: "rgb(var(--color-help-accent) / <alpha-value>)",
         },
         danger: {
           DEFAULT: "rgb(var(--color-danger) / <alpha-value>)",
           foreground: "rgb(var(--color-danger-foreground) / <alpha-value>)",
+		  accent: "rgb(var(--color-danger-accent) / <alpha-value>)",
         },
         dark: {
           DEFAULT: "rgb(var(--color-dark) / <alpha-value>)",
           foreground: "rgb(var(--color-dark-foreground) / <alpha-value>)",
+		  accent: "rgb(var(--color-dark-accent) / <alpha-value>)",
         },
         light: {
           DEFAULT: "rgb(var(--color-light) / <alpha-value>)",
           foreground: "rgb(var(--color-light-foreground) / <alpha-value>)",
+		  accent: "rgb(var(--color-light-accent) / <alpha-value>)",
         },
-		accent: {
-          DEFAULT: "rgb(var(--color-accent) / <alpha-value>)",
-          foreground: "rgb(var(--color-accent-foreground) / <alpha-value>)",
-        },
+		background:{
+			DEFAULT:"rgb(var(--color-background) / <alpha-value>)",
+			foreground: "rgb(var(--color-background-foreground) / <alpha-value>)",
+			accent: "rgb(var(--color-background-accent) / <alpha-value>)",
+		},
 
-		background: "rgb(var(--color-background) / <alpha-value>)",
-        foreground: "rgb(var(--color-foreground) / <alpha-value>)",
 		border: "rgb(var(--color-border) / <alpha-value>)",
         input: "rgb(var(--color-input) / <alpha-value>)",
 

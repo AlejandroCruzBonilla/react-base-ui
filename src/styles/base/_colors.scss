@@ -4,29 +4,44 @@
 	:root {
 		// * Colors
 		--color-primary: #{f.hexToRgbColors(#62CFFF)};
+		--color-primary-accent: #{f.hexToRgbColors(#62CFFF)};
 		--color-primary-foreground: #{f.hexToRgbColors(#1B1C1D)};
+
 		--color-secondary: #{f.hexToRgbColors(#4b5563)};
+		--color-secondary-accent: #{f.hexToRgbColors(#4b5563)};
 		--color-secondary-foreground: #{f.hexToRgbColors(#F8F9FA)};
+
 		--color-success: #{f.hexToRgbColors(#76f8a8)};
+		--color-success-accent: #{f.hexToRgbColors(#76f8a8)};
 		--color-success-foreground: #{f.hexToRgbColors(#1B1C1D)};
+
 		--color-info: #{f.hexToRgbColors(#62CFFF)};
+		--color-info-accent: #{f.hexToRgbColors(#62CFFF)};
 		--color-info-foreground: #{f.hexToRgbColors(#1B1C1D)};
+
 		--color-warning: #{f.hexToRgbColors(#fac380)};
+		--color-warning-accent: #{f.hexToRgbColors(#fac380)};
 		--color-warning-foreground: #{f.hexToRgbColors(#1B1C1D)};
+
 		--color-help: #{f.hexToRgbColors(#E4C8FF)};
+		--color-help-accent: #{f.hexToRgbColors(#E4C8FF)};
 		--color-help-foreground: #{f.hexToRgbColors(#1B1C1D)};
+
 		--color-danger: #{f.hexToRgbColors(#fd9191)};
+		--color-danger-accent: #{f.hexToRgbColors(#fd9191)};
 		--color-danger-foreground: #{f.hexToRgbColors(#1B1C1D)};
+
 		--color-light: #{f.hexToRgbColors(#F8F9FA)};
 		--color-light-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-light-accent: #{f.hexToRgbColors(#F8F9FA)};
+		
 		--color-dark: #{f.hexToRgbColors(#1B1C1D)};
 		--color-dark-foreground: #{f.hexToRgbColors(#F8F9FA)};
+		--color-dark-accent: #{f.hexToRgbColors(#1B1C1D)};
 
 		--color-background: #{f.hexToRgbColors(#F8F9FA)};
-		--color-foreground: #{f.hexToRgbColors(#1B1C1D)};
-		
-		--color-accent: #{f.hexToRgbColors(#DFE6E9)};
-		--color-accent-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-background-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-background-accent: #{f.hexToRgbColors(#DFE6E9)};
 
 		// * Util Colors
 		--color-border: #{f.hexToRgbColors(#DFE6E9)};
@@ -36,10 +51,8 @@
 
 		.dark {
 			--color-background: #{f.hexToRgbColors(#1B1C1D)};
-			--color-foreground: #{f.hexToRgbColors(#F8F9FA)};
-
-			--color-accent: #{f.hexToRgbColors(#333333)};
-			--color-accent-foreground: #{f.hexToRgbColors(#F8F9FA)};
+			--color-background-foreground: #{f.hexToRgbColors(#F8F9FA)};
+			--color-background-accent: #{f.hexToRgbColors(#333333)};
 
 			// * Util Colors
 			--color-border: #{f.hexToRgbColors(#333333)};

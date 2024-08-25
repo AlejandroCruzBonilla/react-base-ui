@@ -50,7 +50,7 @@
 			}
 
 			&-ghost {
-				@apply text-accent-foreground hover:bg-accent hover:text-accent-foreground;
+				@apply text-background-foreground hover:bg-background-accent;
 			}
 		}
 
@@ -92,7 +92,7 @@
 			}
 
 			&-ghost {
-				@apply border border-transparent hover:border-accent-foreground/10 hover:bg-accent-foreground/10 text-accent-foreground;
+				@apply border border-transparent hover:border-background-foreground/10 hover:bg-background-foreground/10 text-background-foreground;
 			}
 		}
 
