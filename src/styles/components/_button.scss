@@ -159,7 +159,7 @@
 
 		// * Modifiers
 		&-raised {
-			@apply shadow-raised hover:shadow-none;
+			@apply shadow-raised transition-shadow duration-25 hover:shadow-none;
 		}
 
 		&-rounded {
