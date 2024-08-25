@@ -1,0 +1,99 @@
+@layer components {
+	.rui-message {
+		@apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-semibold transition-colors h-10 px-4 py-2;
+
+		// * Variants & Severity
+		&-default {
+			&-primary {
+				@apply bg-primary/20 text-primary-foreground;
+			}
+
+			&-secondary {
+				@apply bg-secondary/20 text-secondary-foreground;
+			}
+
+			&-success {
+				@apply bg-success/20 text-success-foreground;
+			}
+
+			&-info {
+				@apply bg-info/20 text-info-foreground;
+			}
+
+			&-warning {
+				@apply bg-warning/20 text-warning-foreground;
+			}
+
+			&-help {
+				@apply bg-help/20 text-help-foreground;
+			}
+
+			&-danger {
+				@apply bg-danger/20 text-danger-foreground;
+			}
+
+			&-dark {
+				@apply bg-dark/20 text-dark-foreground;
+			}
+
+			&-light {
+				@apply bg-light/20 text-light-foreground;
+			}
+
+			&-ghost {
+				@apply text-background-foreground hover:bg-background-foreground/10;
+			}
+		}
+
+		&-outline {
+			&-primary {
+				@apply border border-primary hover:bg-primary/10 text-primary;
+			}
+
+			&-secondary {
+				@apply border border-secondary hover:bg-secondary/10 text-secondary;
+			}
+
+			&-success {
+				@apply border border-success hover:bg-success/10 text-success;
+			}
+
+			&-info {
+				@apply border border-info hover:bg-info/10 text-info;
+			}
+
+			&-warning {
+				@apply border border-warning hover:bg-warning/10 text-warning;
+			}
+
+			&-help {
+				@apply border border-help hover:bg-help/10 text-help;
+			}
+
+			&-danger {
+				@apply border border-danger hover:bg-danger/10 text-danger;
+			}
+
+			&-dark {
+				@apply border border-dark hover:bg-dark/10 text-dark;
+			}
+
+			&-light {
+				@apply border border-light hover:bg-light/10 text-light;
+			}
+
+			&-ghost {
+				@apply border border-transparent hover:border-background-foreground/10 hover:bg-background-foreground/10 text-background-foreground;
+			}
+		}
+
+		// * Modifiers
+		&-raised {
+			@apply shadow-raised hover:shadow-none;
+		}
+
+		&-rounded {
+			@apply rounded-full;
+		}
+	}
+}
