@@ -28,10 +28,11 @@ const meta: Meta<ButtonProps> = {
 				'success',
 				'info',
 				'warning',
-				'help',
 				'danger',
-				'dark',
+				'help',
 				'light',
+				'dark',
+				'contrast',
 				'ghost',
 			],
 			table: {

@@ -2,56 +2,56 @@
 
 @layer base {
 	:root {
+		--color-light: #{f.hexToRgbColors(#f8f9fa)};
+		--color-light-foreground: #{f.hexToRgbColors(#1b1c1d)};
+		--color-light-accent: #{f.hexToRgbColors(#f8f9fa)};
+
+		--color-dark: #{f.hexToRgbColors(#1b1c1d)};
+		--color-dark-foreground: #{f.hexToRgbColors(#f8f9fa)};
+		--color-dark-accent: #{f.hexToRgbColors(#1b1c1d)};
+
+		--color-background: #{f.hexToRgbColors(#f8f9fa)};
+		--color-background-foreground: #{f.hexToRgbColors(#1b1c1d)};
+		--color-background-accent: #{f.hexToRgbColors(#dfe6e9)};
+
 		// * Colors
-		--color-primary: #{f.hexToRgbColors(#C5EDFF)};
-		--color-primary-accent: #{f.hexToRgbColors(#00497B)};
-		--color-primary-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-primary: #{f.hexToRgbColors(#c5edff)};
+		--color-primary-accent: #{f.hexToRgbColors(#00497b)};
+		--color-primary-foreground: #{f.hexToRgbColors(#1b1c1d)};
 
-		--color-secondary: #{f.hexToRgbColors(#4b5563)};
-		--color-secondary-accent: #{f.hexToRgbColors(#eff8ff)};
-		--color-secondary-foreground: #{f.hexToRgbColors(#F8F9FA)};
+		--color-secondary: #{f.hexToRgbColors(#dee3e7)};
+		--color-secondary-accent: #{f.hexToRgbColors(#4b5563)};
+		--color-secondary-foreground: #{f.hexToRgbColors(#1b1c1d)};
 
-		--color-success: #{f.hexToRgbColors(#ADEDE0)};
-		--color-success-accent: #{f.hexToRgbColors(#004D40)};
-		--color-success-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-success: #{f.hexToRgbColors(#C8FFD8)};
+		--color-success-accent: #{f.hexToRgbColors(#004d40)};
+		--color-success-foreground: #{f.hexToRgbColors(#1b1c1d)};
 
-		--color-info: #{f.hexToRgbColors(#C5EDFF)};
-		--color-info-accent: #{f.hexToRgbColors(#004D83)};
-		--color-info-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-info: #{f.hexToRgbColors(#c5edff)};
+		--color-info-accent: #{f.hexToRgbColors(#00497b)};
+		--color-info-foreground: #{f.hexToRgbColors(#1b1c1d)};
 
-		--color-warning: #{f.hexToRgbColors(#FFE4B3)};
-		--color-warning-accent: #{f.hexToRgbColors(#7B2C00)};
-		--color-warning-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-warning: #{f.hexToRgbColors(#FFEDCC)};
+		--color-warning-accent: #{f.hexToRgbColors(#A23800)};
+		--color-warning-foreground: #{f.hexToRgbColors(#1b1c1d)};
 
-		--color-help: #{f.hexToRgbColors(#D3C5FF)};
-		--color-help-accent: #{f.hexToRgbColors(#4B0082)};
-		--color-help-foreground: #{f.hexToRgbColors(#1B1C1D)};
+		--color-danger: #{f.hexToRgbColors(#FFD6D6)};
+		--color-danger-accent: #{f.hexToRgbColors(#750000)};
+		--color-danger-foreground: #{f.hexToRgbColors(#1b1c1d)};
 
-		--color-danger: #{f.hexToRgbColors(#FFB3B3)};
-		--color-danger-accent: #{f.hexToRgbColors(#620000)};
-		--color-danger-foreground: #{f.hexToRgbColors(#1B1C1D)};
-
-		--color-light: #{f.hexToRgbColors(#F8F9FA)};
-		--color-light-foreground: #{f.hexToRgbColors(#1B1C1D)};
-		--color-light-accent: #{f.hexToRgbColors(#F8F9FA)};
-		
-		--color-dark: #{f.hexToRgbColors(#1B1C1D)};
-		--color-dark-foreground: #{f.hexToRgbColors(#F8F9FA)};
-		--color-dark-accent: #{f.hexToRgbColors(#1B1C1D)};
-
-		--color-background: #{f.hexToRgbColors(#F8F9FA)};
-		--color-background-foreground: #{f.hexToRgbColors(#1B1C1D)};
-		--color-background-accent: #{f.hexToRgbColors(#DFE6E9)};
+		--color-help: #{f.hexToRgbColors(#d3c5ff)};
+		--color-help-accent: #{f.hexToRgbColors(#4b0082)};
+		--color-help-foreground: #{f.hexToRgbColors(#1b1c1d)};
 
 		// * Util Colors
-		--color-border: #{f.hexToRgbColors(#DFE6E9)};
-		--color-input: #{f.hexToRgbColors(#DFE6E9)};
+		--color-border: #{f.hexToRgbColors(#dfe6e9)};
+		--color-input: #{f.hexToRgbColors(#dfe6e9)};
 
 		// * Chart Colors
 
 		.dark {
-			--color-background: #{f.hexToRgbColors(#1B1C1D)};
-			--color-background-foreground: #{f.hexToRgbColors(#F8F9FA)};
+			--color-background: #{f.hexToRgbColors(#1b1c1d)};
+			--color-background-foreground: #{f.hexToRgbColors(#f8f9fa)};
 			--color-background-accent: #{f.hexToRgbColors(#333333)};
 
 			// * Util Colors
