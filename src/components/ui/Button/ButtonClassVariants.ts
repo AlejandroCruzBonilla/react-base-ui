@@ -33,8 +33,9 @@ const raised = {
 }
 
 const rounded = {
-	true: 'rui-button-rounded',
-	false: ''
+	none: '',
+	medium: 'rui-button-rounded-medium',
+	full: 'rui-button-rounded-full'
 }
 
 export const buttonVariants = cva('rui-button', {
@@ -90,7 +91,7 @@ export const buttonVariants = cva('rui-button', {
 		variant: 'default',
 		size: 'default',
 		raised: false,
-		rounded: false,
+		rounded: 'medium',
 	},
 });
 
