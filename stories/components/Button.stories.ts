@@ -57,7 +57,7 @@ const meta: Meta<ButtonProps> = {
 		},
 		rounded: {
 			control: 'select',
-			options: ['none','medium','full'],
+			options: ['none','default','full'],
 			table: {
 				defaultValue: { summary: 'false' },
 				type: { summary: 'boolean' },
@@ -75,7 +75,7 @@ const meta: Meta<ButtonProps> = {
 		children: 'React Node',
 		disabled: false,
 		raised: false,
-		rounded: 'medium',
+		rounded: 'default',
 		severity: 'default',
 		size: 'default',
 		variant: 'default',
