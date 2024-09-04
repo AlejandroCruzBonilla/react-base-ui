@@ -24,8 +24,9 @@ const raised = {
 }
 
 const rounded = {
-	true: 'rui-badge-rounded',
-	false: ''
+	none: '',
+	default: 'rui-badge-rounded-medium',
+	full: 'rui-badge-rounded-full'
 }
 
 export const badgeVariants = cva('rui-badge', {
@@ -64,7 +65,7 @@ export const badgeVariants = cva('rui-badge', {
 		severity: 'default',
 		variant: 'default',
 		raised: false,
-		rounded: false,
+		rounded: 'default',
 	},
 });
 

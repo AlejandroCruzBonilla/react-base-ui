@@ -44,10 +44,11 @@ const meta: Meta<BadgeProps> = {
 			},
 		},
 		rounded: {
-			control: 'boolean',
+			control: 'select',
+			options: ['none','default','full'],
 			table: {
-				defaultValue: { summary: 'false' },
-				type: { summary: 'boolean' },
+				defaultValue: { summary: 'default' },
+				type: { summary: 'BadgeRounded' },
 			},
 		},
 		children: {
@@ -60,7 +61,7 @@ const meta: Meta<BadgeProps> = {
 		children: 'React Node',
 		value: '50',
 		raised: false,
-		rounded: false,
+		rounded: 'default',
 		severity: 'default',
 		variant: 'default',
 	},

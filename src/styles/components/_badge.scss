@@ -1,6 +1,6 @@
 @layer components {
 	.rui-badge {
-		@apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-semibold transition-colors;
+		@apply inline-flex items-center justify-center whitespace-nowrap text-sm font-semibold transition-colors;
 
 		&:not(:empty) {
 			@apply min-w-6 h-6 px-1;
@@ -10,35 +10,34 @@
 			@apply p-1;
 		}
 
-
 		// * Variants & Severity
 		&-default {
 			&-primary {
-				@apply bg-primary text-primary-foreground hover:bg-primary/80;
+				@apply bg-primary text-primary-accent hover:bg-primary/80;
 			}
 
 			&-secondary {
-				@apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
+				@apply bg-secondary text-secondary-accent hover:bg-secondary/80;
 			}
 
 			&-success {
-				@apply bg-success text-success-foreground hover:bg-success/80;
+				@apply bg-success text-success-accent hover:bg-success/80;
 			}
 
 			&-info {
-				@apply bg-info text-info-foreground hover:bg-info/80;
+				@apply bg-info text-info-accent hover:bg-info/80;
 			}
 
 			&-warning {
-				@apply bg-warning text-warning-foreground hover:bg-warning/80;
+				@apply bg-warning text-warning-accent hover:bg-warning/80;
 			}
 
 			&-help {
-				@apply bg-help text-help-foreground hover:bg-help/80;
+				@apply bg-help text-help-accent hover:bg-help/80;
 			}
 
 			&-danger {
-				@apply bg-danger text-danger-foreground hover:bg-danger/80;
+				@apply bg-danger text-danger-accent hover:bg-danger/80;
 			}
 
 			&-dark {
@@ -56,43 +55,47 @@
 
 		&-outline {
 			&-primary {
-				@apply border border-primary hover:bg-primary/10 text-primary;
+				@apply border border-primary-accent text-primary-accent hover:bg-primary focus-visible:ring-primary-accent dark:border-primary dark:text-primary dark:hover:bg-primary-accent/70 dark:focus-visible:ring-primary;
 			}
 
 			&-secondary {
-				@apply border border-secondary hover:bg-secondary/10 text-secondary;
+				@apply border border-secondary-accent text-secondary-accent hover:bg-secondary focus-visible:ring-secondary-accent dark:border-secondary dark:text-secondary dark:hover:bg-secondary-accent/70 dark:focus-visible:ring-secondary;
 			}
 
 			&-success {
-				@apply border border-success hover:bg-success/10 text-success;
+				@apply border border-success-accent text-success-accent hover:bg-success focus-visible:ring-success-accent dark:border-success dark:text-success dark:hover:bg-success-accent/70 dark:focus-visible:ring-success;
 			}
 
 			&-info {
-				@apply border border-info hover:bg-info/10 text-info;
+				@apply border border-info-accent text-info-accent hover:bg-info focus-visible:ring-info-accent dark:border-info dark:text-info dark:hover:bg-info-accent/70 dark:focus-visible:ring-info;
 			}
 
 			&-warning {
-				@apply border border-warning hover:bg-warning/10 text-warning;
-			}
-
-			&-help {
-				@apply border border-help hover:bg-help/10 text-help;
+				@apply border border-warning-accent text-warning-accent hover:bg-warning focus-visible:ring-warning-accent dark:border-warning dark:text-warning dark:hover:bg-warning-accent/70 dark:focus-visible:ring-warning;
 			}
 
 			&-danger {
-				@apply border border-danger hover:bg-danger/10 text-danger;
+				@apply border border-danger-accent text-danger-accent hover:bg-danger focus-visible:ring-danger-accent dark:border-danger dark:text-danger dark:hover:bg-danger-accent/70 dark:focus-visible:ring-danger;
 			}
 
-			&-dark {
-				@apply border border-dark hover:bg-dark/10 text-dark;
+			&-help {
+				@apply border border-help-accent text-help-accent hover:bg-help focus-visible:ring-help-accent dark:border-help dark:text-help dark:hover:bg-help-accent/70 dark:focus-visible:ring-help;
 			}
 
 			&-light {
-				@apply border border-light hover:bg-light/10 text-light;
+				@apply border border-light hover:bg-light/10 text-light focus-visible:ring-light;
+			}
+
+			&-dark {
+				@apply border border-dark hover:bg-dark/10 text-dark focus-visible:ring-dark;
+			}
+
+			&-contrast {
+				@apply border border-background-foreground hover:bg-background-foreground/10 text-background-foreground focus-visible:ring-background-foreground;
 			}
 
 			&-ghost {
-				@apply border border-transparent hover:border-background-foreground/10 hover:bg-background-foreground/10 text-background-foreground;
+				@apply border border-transparent hover:border-background-foreground/10 hover:bg-background-foreground/10 text-background-foreground focus-visible:ring-background-foreground/20;
 			}
 		}
 
@@ -102,7 +105,13 @@
 		}
 
 		&-rounded {
-			@apply rounded-full;
+			&-medium {
+				@apply rounded-md;
+			}
+
+			&-full {
+				@apply rounded-full;
+			}
 		}
 	}
 }
