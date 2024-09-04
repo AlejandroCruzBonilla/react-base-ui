@@ -24,8 +24,9 @@ const raised = {
 }
 
 const rounded = {
-	true: 'rui-message-rounded',
-	false: ''
+	none: '',
+	default: 'rui-message-rounded-medium',
+	full: 'rui-message-rounded-full'
 }
 
 export const messageVariants = cva('rui-message', {
@@ -64,7 +65,7 @@ export const messageVariants = cva('rui-message', {
 		severity: 'default',
 		variant: 'default',
 		raised: false,
-		rounded: false,
+		rounded: 'default',
 	},
 });
 

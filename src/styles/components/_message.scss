@@ -1,6 +1,6 @@
 @layer components {
 	.rui-message {
-		@apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-semibold transition-colors h-10 px-4 py-2;
+		@apply inline-flex items-center justify-center whitespace-nowrap text-sm font-semibold transition-colors h-10 px-4 py-2;
 
 		// * Variants & Severity
 		&-default {
@@ -93,7 +93,13 @@
 		}
 
 		&-rounded {
-			@apply rounded-full;
+			&-medium {
+				@apply rounded-md;
+			}
+
+			&-full {
+				@apply rounded-full;
+			}
 		}
 	}
 }

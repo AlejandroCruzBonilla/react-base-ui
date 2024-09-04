@@ -44,10 +44,11 @@ const meta: Meta<MessageProps> = {
 			},
 		},
 		rounded: {
-			control: 'boolean',
+			control: 'select',
+			options: ['none','default','full'],
 			table: {
-				defaultValue: { summary: 'false' },
-				type: { summary: 'boolean' },
+				defaultValue: { summary: 'default' },
+				type: { summary: 'MessageRounded' },
 			},
 		},
 		children: {
@@ -60,7 +61,7 @@ const meta: Meta<MessageProps> = {
 		children: 'React Node',
 		value: 'Message text is required',
 		raised: false,
-		rounded: false,
+		rounded: 'default',
 		severity: 'default',
 		variant: 'default',
 	},
