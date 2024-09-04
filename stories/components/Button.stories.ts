@@ -59,8 +59,8 @@ const meta: Meta<ButtonProps> = {
 			control: 'select',
 			options: ['none','default','full'],
 			table: {
-				defaultValue: { summary: 'false' },
-				type: { summary: 'boolean' },
+				defaultValue: { summary: 'default' },
+				type: { summary: 'ButtonRounded' },
 			},
 		},
 		disabled: {
