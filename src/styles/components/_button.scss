@@ -91,7 +91,7 @@
 			}
 
 			&-ghost {
-				@apply border border-transparent hover:border-background-foreground/10 hover:bg-background-foreground/10 text-background-foreground focus-visible:ring-background-foreground/20;
+				@apply border border-transparent hover:border-background-foreground/30 hover:bg-background-foreground/10 text-background-foreground focus-visible:ring-background-foreground/20;
 			}
 		}
 
