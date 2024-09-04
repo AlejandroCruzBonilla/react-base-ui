@@ -44,10 +44,11 @@ const meta: Meta<TagProps> = {
 			},
 		},
 		rounded: {
-			control: 'boolean',
+			control: 'select',
+			options: ['none','default','full'],
 			table: {
-				defaultValue: { summary: 'false' },
-				type: { summary: 'boolean' },
+				defaultValue: { summary: 'default' },
+				type: { summary: 'TagRounded' },
 			},
 		},
 		children: {
@@ -60,7 +61,7 @@ const meta: Meta<TagProps> = {
 		children: 'React Node',
 		value: 'Text Value',
 		raised: false,
-		rounded: false,
+		rounded: 'default',
 		severity: 'default',
 		variant: 'default',
 	},

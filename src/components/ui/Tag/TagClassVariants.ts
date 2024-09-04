@@ -25,8 +25,9 @@ const raised = {
 }
 
 const rounded = {
-	true: 'rui-tag-rounded',
-	false: ''
+	none: '',
+	default: 'rui-tag-rounded-medium',
+	full: 'rui-tag-rounded-full'
 }
 
 export const tagVariants = cva('rui-tag', {
@@ -77,7 +78,7 @@ export const tagVariants = cva('rui-tag', {
 		severity: 'default',
 		variant: 'default',
 		raised: false,
-		rounded: false,
+		rounded: 'default',
 	},
 });
 
