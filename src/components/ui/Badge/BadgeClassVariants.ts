@@ -15,6 +15,7 @@ const severity = {
 	danger: true,
 	dark: true,
 	light: true,
+	contrast: true,
 	ghost: true,
 }
 
@@ -47,6 +48,7 @@ export const badgeVariants = cva('rui-badge', {
 		{variant: 'default', severity: 'danger', 	class: 'rui-badge-default-danger'},
 		{variant: 'default', severity: 'dark', 		class: 'rui-badge-default-dark'},
 		{variant: 'default', severity: 'light', 	class: 'rui-badge-default-light'},
+		{variant: 'default', severity: 'contrast', 	class: 'rui-badge-default-contrast'},
 		{variant: 'default', severity: 'ghost', 	class: 'rui-badge-default-ghost'},
 		
 		// * Outline
@@ -59,6 +61,7 @@ export const badgeVariants = cva('rui-badge', {
 		{variant: 'outline', severity: 'danger', 	class: 'rui-badge-outline-danger'},
 		{variant: 'outline', severity: 'dark', 		class: 'rui-badge-outline-dark'},
 		{variant: 'outline', severity: 'light', 	class: 'rui-badge-outline-light'},
+		{variant: 'outline', severity: 'contrast', 	class: 'rui-badge-outline-contrast'},
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-badge-outline-ghost'},
 	],
 	defaultVariants: {

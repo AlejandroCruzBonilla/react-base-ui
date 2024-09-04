@@ -48,6 +48,10 @@
 				@apply bg-light text-light-foreground hover:bg-light/80;
 			}
 
+			&-contrast {
+				@apply bg-background-foreground text-background hover:bg-background-foreground/80;
+			}
+
 			&-ghost {
 				@apply text-background-foreground hover:bg-background-accent;
 			}
@@ -55,47 +59,47 @@
 
 		&-outline {
 			&-primary {
-				@apply border border-primary-accent text-primary-accent hover:bg-primary focus-visible:ring-primary-accent dark:border-primary dark:text-primary dark:hover:bg-primary-accent/70 dark:focus-visible:ring-primary;
+				@apply border border-primary-accent text-primary-accent hover:bg-primary dark:border-primary dark:text-primary dark:hover:bg-primary-accent/70;
 			}
 
 			&-secondary {
-				@apply border border-secondary-accent text-secondary-accent hover:bg-secondary focus-visible:ring-secondary-accent dark:border-secondary dark:text-secondary dark:hover:bg-secondary-accent/70 dark:focus-visible:ring-secondary;
+				@apply border border-secondary-accent text-secondary-accent hover:bg-secondary dark:border-secondary dark:text-secondary dark:hover:bg-secondary-accent/70;
 			}
 
 			&-success {
-				@apply border border-success-accent text-success-accent hover:bg-success focus-visible:ring-success-accent dark:border-success dark:text-success dark:hover:bg-success-accent/70 dark:focus-visible:ring-success;
+				@apply border border-success-accent text-success-accent hover:bg-success dark:border-success dark:text-success dark:hover:bg-success-accent/70;
 			}
 
 			&-info {
-				@apply border border-info-accent text-info-accent hover:bg-info focus-visible:ring-info-accent dark:border-info dark:text-info dark:hover:bg-info-accent/70 dark:focus-visible:ring-info;
+				@apply border border-info-accent text-info-accent hover:bg-info dark:border-info dark:text-info dark:hover:bg-info-accent/70;
 			}
 
 			&-warning {
-				@apply border border-warning-accent text-warning-accent hover:bg-warning focus-visible:ring-warning-accent dark:border-warning dark:text-warning dark:hover:bg-warning-accent/70 dark:focus-visible:ring-warning;
+				@apply border border-warning-accent text-warning-accent hover:bg-warning dark:border-warning dark:text-warning dark:hover:bg-warning-accent/70;
 			}
 
 			&-danger {
-				@apply border border-danger-accent text-danger-accent hover:bg-danger focus-visible:ring-danger-accent dark:border-danger dark:text-danger dark:hover:bg-danger-accent/70 dark:focus-visible:ring-danger;
+				@apply border border-danger-accent text-danger-accent hover:bg-danger dark:border-danger dark:text-danger dark:hover:bg-danger-accent/70;
 			}
 
 			&-help {
-				@apply border border-help-accent text-help-accent hover:bg-help focus-visible:ring-help-accent dark:border-help dark:text-help dark:hover:bg-help-accent/70 dark:focus-visible:ring-help;
+				@apply border border-help-accent text-help-accent hover:bg-help dark:border-help dark:text-help dark:hover:bg-help-accent/70;
 			}
 
 			&-light {
-				@apply border border-light hover:bg-light/10 text-light focus-visible:ring-light;
+				@apply border border-light hover:bg-light/10 text-light;
 			}
 
 			&-dark {
-				@apply border border-dark hover:bg-dark/10 text-dark focus-visible:ring-dark;
+				@apply border border-dark hover:bg-dark/10 text-dark;
 			}
 
 			&-contrast {
-				@apply border border-background-foreground hover:bg-background-foreground/10 text-background-foreground focus-visible:ring-background-foreground;
+				@apply border border-background-foreground hover:bg-background-foreground/10 text-background-foreground;
 			}
 
 			&-ghost {
-				@apply border border-transparent hover:border-background-foreground/10 hover:bg-background-foreground/10 text-background-foreground focus-visible:ring-background-foreground/20;
+				@apply border border-transparent hover:border-background-foreground/10 hover:bg-background-foreground/10 text-background-foreground;
 			}
 		}
 

@@ -29,6 +29,7 @@ const meta: Meta<BadgeProps> = {
 				'danger',
 				'dark',
 				'light',
+				'contrast',
 				'ghost',
 			],
 			table: {
