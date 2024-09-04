@@ -29,6 +29,7 @@ const meta: Meta<TagProps> = {
 				'danger',
 				'dark',
 				'light',
+				'contrast',
 				'ghost',
 			],
 			table: {

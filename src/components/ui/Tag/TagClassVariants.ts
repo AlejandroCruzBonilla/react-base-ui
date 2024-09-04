@@ -16,6 +16,7 @@ const severity = {
 	danger: true,
 	dark: true,
 	light: true,
+	contrast: true,
 	ghost: true,
 }
 
@@ -48,6 +49,7 @@ export const tagVariants = cva('rui-tag', {
 		{variant: 'default', severity: 'danger', 	class: 'rui-tag-default-danger'},
 		{variant: 'default', severity: 'dark', 		class: 'rui-tag-default-dark'},
 		{variant: 'default', severity: 'light', 	class: 'rui-tag-default-light'},
+		{variant: 'default', severity: 'contrast', 	class: 'rui-tag-default-contrast'},
 		{variant: 'default', severity: 'ghost', 	class: 'rui-tag-default-ghost'},
 		
 		// * Outline
@@ -60,6 +62,7 @@ export const tagVariants = cva('rui-tag', {
 		{variant: 'outline', severity: 'danger', 	class: 'rui-tag-outline-danger'},
 		{variant: 'outline', severity: 'dark', 		class: 'rui-tag-outline-dark'},
 		{variant: 'outline', severity: 'light', 	class: 'rui-tag-outline-light'},
+		{variant: 'outline', severity: 'contrast', 	class: 'rui-tag-outline-contrast'},
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-tag-outline-ghost'},
 
 		// * Link
@@ -72,6 +75,7 @@ export const tagVariants = cva('rui-tag', {
 		{variant: 'link', severity: 'danger', 	 class: 'rui-tag-link-danger'},
 		{variant: 'link', severity: 'dark', 	 class: 'rui-tag-link-dark'},
 		{variant: 'link', severity: 'light', 	 class: 'rui-tag-link-light'},
+		{variant: 'link', severity: 'contrast',	 class: 'rui-tag-link-contrast'},
 		{variant: 'link', severity: 'ghost', 	 class: 'rui-tag-link-ghost'},
 	],
 	defaultVariants: {
