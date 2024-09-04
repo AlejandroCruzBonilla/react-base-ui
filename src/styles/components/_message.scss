@@ -5,39 +5,43 @@
 		// * Variants & Severity
 		&-default {
 			&-primary {
-				@apply bg-primary/20 text-primary-foreground;
+				@apply bg-primary text-primary-accent;
 			}
 
 			&-secondary {
-				@apply bg-secondary/20 text-secondary-foreground;
+				@apply bg-secondary text-secondary-accent;
 			}
 
 			&-success {
-				@apply bg-success/20 text-success-foreground;
+				@apply bg-success text-success-accent;
 			}
 
 			&-info {
-				@apply bg-info/20 text-info-foreground;
+				@apply bg-info text-info-accent;
 			}
 
 			&-warning {
-				@apply bg-warning/20 text-warning-foreground;
+				@apply bg-warning text-warning-accent;
 			}
 
 			&-help {
-				@apply bg-help/20 text-help-foreground;
+				@apply bg-help text-help-accent;
 			}
 
 			&-danger {
-				@apply bg-danger/20 text-danger-foreground;
+				@apply bg-danger text-danger-accent;
 			}
 
 			&-dark {
-				@apply bg-dark/20 text-dark-foreground;
+				@apply bg-dark text-dark-foreground;
 			}
 
 			&-light {
-				@apply bg-light/20 text-light-foreground;
+				@apply bg-light text-light-foreground;
+			}
+
+			&-contrast {
+				@apply bg-background-foreground text-background;
 			}
 
 			&-ghost {
@@ -47,43 +51,47 @@
 
 		&-outline {
 			&-primary {
-				@apply border border-primary hover:bg-primary/10 text-primary;
+				@apply border border-primary-accent text-primary-accent dark:border-primary dark:text-primary;
 			}
 
 			&-secondary {
-				@apply border border-secondary hover:bg-secondary/10 text-secondary;
+				@apply border border-secondary-accent text-secondary-accent dark:border-secondary dark:text-secondary;
 			}
 
 			&-success {
-				@apply border border-success hover:bg-success/10 text-success;
+				@apply border border-success-accent text-success-accent dark:border-success dark:text-success;
 			}
 
 			&-info {
-				@apply border border-info hover:bg-info/10 text-info;
+				@apply border border-info-accent text-info-accent dark:border-info dark:text-info;
 			}
 
 			&-warning {
-				@apply border border-warning hover:bg-warning/10 text-warning;
-			}
-
-			&-help {
-				@apply border border-help hover:bg-help/10 text-help;
+				@apply border border-warning-accent text-warning-accent dark:border-warning dark:text-warning;
 			}
 
 			&-danger {
-				@apply border border-danger hover:bg-danger/10 text-danger;
+				@apply border border-danger-accent text-danger-accent dark:border-danger dark:text-danger;
 			}
 
-			&-dark {
-				@apply border border-dark hover:bg-dark/10 text-dark;
+			&-help {
+				@apply border border-help-accent text-help-accent dark:border-help dark:text-help;
 			}
 
 			&-light {
-				@apply border border-light hover:bg-light/10 text-light;
+				@apply border border-light text-light;
+			}
+
+			&-dark {
+				@apply border border-dark text-dark;
+			}
+
+			&-contrast {
+				@apply border border-background-foreground text-background-foreground;
 			}
 
 			&-ghost {
-				@apply border border-transparent hover:border-background-foreground/10 hover:bg-background-foreground/10 text-background-foreground;
+				@apply border border-transparent hover:border-background-foreground/30 text-background-foreground;
 			}
 		}
 

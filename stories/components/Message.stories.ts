@@ -29,6 +29,7 @@ const meta: Meta<MessageProps> = {
 				'danger',
 				'dark',
 				'light',
+				'contrast',
 				'ghost',
 			],
 			table: {
@@ -59,7 +60,7 @@ const meta: Meta<MessageProps> = {
 	},
 	args: {
 		children: 'React Node',
-		value: 'Message text is required',
+		value: 'Text Value',
 		raised: false,
 		rounded: 'default',
 		severity: 'default',

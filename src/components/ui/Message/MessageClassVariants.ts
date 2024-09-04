@@ -15,6 +15,7 @@ const severity = {
 	danger: true,
 	dark: true,
 	light: true,
+	contrast: true,
 	ghost: true,
 }
 
@@ -47,6 +48,7 @@ export const messageVariants = cva('rui-message', {
 		{variant: 'default', severity: 'danger', 	class: 'rui-message-default-danger'},
 		{variant: 'default', severity: 'dark', 		class: 'rui-message-default-dark'},
 		{variant: 'default', severity: 'light', 	class: 'rui-message-default-light'},
+		{variant: 'default', severity: 'contrast', 	class: 'rui-message-default-contrast'},
 		{variant: 'default', severity: 'ghost', 	class: 'rui-message-default-ghost'},
 		
 		// * Outline
@@ -59,6 +61,7 @@ export const messageVariants = cva('rui-message', {
 		{variant: 'outline', severity: 'danger', 	class: 'rui-message-outline-danger'},
 		{variant: 'outline', severity: 'dark', 		class: 'rui-message-outline-dark'},
 		{variant: 'outline', severity: 'light', 	class: 'rui-message-outline-light'},
+		{variant: 'outline', severity: 'contrast', 	class: 'rui-message-outline-contrast'},
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-message-outline-ghost'},
 	],
 	defaultVariants: {
