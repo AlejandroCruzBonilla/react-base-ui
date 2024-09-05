@@ -32,7 +32,6 @@ Toolbar
 
  
 TODO: Próximos Componentes
-Skeleton
 Divider
 Avatar
 -
@@ -51,7 +50,7 @@ Chip - Add props: icon, iconPosition closeable
 
 
 READY: Componentes Listos
-
+Skeleton
 
 
 FIXME: Componentes para Arreglar
