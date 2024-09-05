@@ -1,0 +1,109 @@
+@layer components {
+	.rui-long_message {
+		@apply flex items-center justify-start whitespace-nowrap font-semibold transition-colors h-16 px-4 py-2;
+
+		// * Variants & Severity
+		&-default {
+			&-primary {
+				@apply bg-primary text-primary-accent border-l-8 border-primary-accent;
+			}
+
+			&-secondary {
+				@apply bg-secondary text-secondary-accent border-l-8 border-secondary-accent;
+			}
+
+			&-success {
+				@apply bg-success text-success-accent border-l-8 border-success-accent;
+			}
+
+			&-info {
+				@apply bg-info text-info-accent border-l-8 border-info-accent;
+			}
+
+			&-warning {
+				@apply bg-warning text-warning-accent border-l-8 border-warning-accent;
+			}
+
+			&-help {
+				@apply bg-help text-help-accent border-l-8 border-help-accent;
+			}
+
+			&-danger {
+				@apply bg-danger text-danger-accent border-l-8 border-danger-accent;
+			}
+
+			&-dark {
+				@apply bg-dark text-dark-foreground border-l-8 border-dark-foreground/60;
+			}
+
+			&-light {
+				@apply bg-light text-light-foreground border-l-8 border-light-foreground/60;
+			}
+
+			&-contrast {
+				@apply bg-background-foreground text-background border-l-8 border-background/60;
+			}
+
+			&-ghost {
+				@apply text-background-foreground hover:bg-background-foreground/10 border-l-8 border-transparent hover:border-background-foreground/60;
+			}
+		}
+
+		&-outline {
+			&-primary {
+				@apply border border-l-8 border-primary-accent text-primary-accent dark:border-primary dark:text-primary;
+			}
+
+			&-secondary {
+				@apply border border-l-8 border-secondary-accent text-secondary-accent dark:border-secondary dark:text-secondary;
+			}
+
+			&-success {
+				@apply border border-l-8 border-success-accent text-success-accent dark:border-success dark:text-success;
+			}
+
+			&-info {
+				@apply border border-l-8 border-info-accent text-info-accent dark:border-info dark:text-info;
+			}
+
+			&-warning {
+				@apply border border-l-8 border-warning-accent text-warning-accent dark:border-warning dark:text-warning;
+			}
+
+			&-danger {
+				@apply border border-l-8 border-danger-accent text-danger-accent dark:border-danger dark:text-danger;
+			}
+
+			&-help {
+				@apply border border-l-8 border-help-accent text-help-accent dark:border-help dark:text-help;
+			}
+
+			&-light {
+				@apply border border-l-8 border-light text-light;
+			}
+
+			&-dark {
+				@apply border border-l-8 border-dark text-dark;
+			}
+
+			&-contrast {
+				@apply border border-l-8 border-background-foreground text-background-foreground;
+			}
+
+			&-ghost {
+				@apply border border-l-8 border-transparent hover:border-background-foreground/60 text-background-foreground;
+			}
+		}
+
+		// * Modifiers
+		&-raised {
+			@apply shadow-raised hover:shadow-none;
+		}
+
+		&-rounded {
+			&-medium {
+				@apply rounded-md;
+			}
+		}
+	}
+}

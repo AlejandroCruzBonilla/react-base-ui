@@ -32,9 +32,6 @@ Toolbar
 
  
 TODO: Próximos Componentes
-
-Message
-Alert | Messages
 Skeleton
 Divider
 Avatar
@@ -43,9 +40,11 @@ Chip
 Tooltip
 
 TODO: Editar comportamiento
-Button - Add props: icon,iconPosition label
-Tag- Add props: icon, iconPosition, 
+Button - Add props: icon, iconPosition value
+Tag - Add props: icon, iconPosition, 
 Badge - Position para que se muestre como un super indice
+Message - Add props: icon, iconPosition
+Long Message - Add props: icon, iconPosition
 
 
 READY: Componentes Listos
