@@ -33,7 +33,7 @@ const meta: Meta<SkeletonProps> = {
 			],
 			table: {
 				defaultValue: { summary: 'default' },
-				type: { summary: 'TagSeverity' },
+				type: { summary: 'SkeletonSeverity' },
 			},
 		},
 		raised: {
@@ -48,7 +48,7 @@ const meta: Meta<SkeletonProps> = {
 			options: ['none','default','full'],
 			table: {
 				defaultValue: { summary: 'default' },
-				type: { summary: 'TagRounded' },
+				type: { summary: 'SkeletonRounded' },
 			},
 		},
 		children: {
