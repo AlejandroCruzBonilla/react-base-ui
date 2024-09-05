@@ -38,6 +38,8 @@ Avatar
 -
 Chip
 Tooltip
+Messages
+LongMessages
 
 TODO: Editar comportamiento
 Button - Add props: icon, iconPosition value
