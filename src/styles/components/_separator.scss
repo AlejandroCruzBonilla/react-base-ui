@@ -1,0 +1,59 @@
+@layer components {
+	.rui-separator {
+		@apply shrink-0;
+
+		// * Variants & Severity
+		&-default {
+			&-primary {
+				@apply bg-primary;
+			}
+
+			&-secondary {
+				@apply bg-secondary;
+			}
+
+			&-success {
+				@apply bg-success;
+			}
+
+			&-info {
+				@apply bg-info;
+			}
+
+			&-warning {
+				@apply bg-warning;
+			}
+
+			&-help {
+				@apply bg-help;
+			}
+
+			&-danger {
+				@apply bg-danger;
+			}
+
+			&-dark {
+				@apply bg-dark/70;
+			}
+
+			&-light {
+				@apply bg-light/70;
+			}
+
+			&-contrast {
+				@apply bg-background-foreground/70;
+			}
+		}
+
+		// * Modifiers
+		&-orientation {
+			&-horizontal {
+				@apply h-[1px] w-full;
+			}
+
+			&-vertical {
+				@apply h-full w-[1px];
+			}
+		}
+	}
+}
