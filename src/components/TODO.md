@@ -36,17 +36,18 @@ Skeleton
 Divider
 Avatar
 -
-Chip
 Tooltip
 Messages
 LongMessages
+Chips
 
 TODO: Editar comportamiento
 Button - Add props: icon, iconPosition value
 Tag - Add props: icon, iconPosition, 
 Badge - Position para que se muestre como un super indice
-Message - Add props: icon, iconPosition
-Long Message - Add props: icon, iconPosition
+Message - Add props: icon, iconPosition closeable
+Long Message - Add props: icon, iconPosition closeable
+Chip - Add props: icon, iconPosition closeable
 
 
 READY: Componentes Listos
