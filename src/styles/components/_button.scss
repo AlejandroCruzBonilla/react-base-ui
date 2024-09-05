@@ -143,11 +143,11 @@
 
 		// * Sizes
 		&-size {
-			&-default {
-				@apply h-10 px-4 py-2;
-			}
 			&-sm {
-				@apply h-9 rounded-md px-3;
+				@apply h-9 rounded-md px-2;
+			}
+			&-medium {
+				@apply h-10 px-4 py-2;
 			}
 			&-lg {
 				@apply h-11 rounded-md px-8;

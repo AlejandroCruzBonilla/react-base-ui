@@ -20,7 +20,7 @@ const meta: Meta<MessageProps> = {
 		severity: {
 			control: 'select',
 			options: [
-				'default',
+				'primary',
 				'secondary',
 				'success',
 				'info',
@@ -33,7 +33,7 @@ const meta: Meta<MessageProps> = {
 				'ghost',
 			],
 			table: {
-				defaultValue: { summary: 'default' },
+				defaultValue: { summary: 'primary' },
 				type: { summary: 'MessageSeverity' },
 			},
 		},
@@ -46,24 +46,24 @@ const meta: Meta<MessageProps> = {
 		},
 		rounded: {
 			control: 'select',
-			options: ['none','default','full'],
+			options: ['none', 'medium', 'full'],
 			table: {
-				defaultValue: { summary: 'default' },
+				defaultValue: { summary: 'medium' },
 				type: { summary: 'MessageRounded' },
 			},
 		},
 		children: {
 			table: {
-				type: { summary: 'ReactNode' }
-			}
-		}
+				type: { summary: 'ReactNode' },
+			},
+		},
 	},
 	args: {
 		children: 'React Node',
 		value: 'Text Value',
 		raised: false,
-		rounded: 'default',
-		severity: 'default',
+		rounded: 'medium',
+		severity: 'primary',
 		variant: 'default',
 	},
 	tags: ['autodocs'],

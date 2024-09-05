@@ -6,7 +6,7 @@ const variant = {
 }
 
 const severity = {
-	default: true,
+	primary: true,
 	secondary: true,
 	success: true,
 	info: true,
@@ -26,7 +26,7 @@ const raised = {
 
 const rounded = {
 	none: '',
-	default: 'rui-message-rounded-medium',
+	medium: 'rui-message-rounded-medium',
 	full: 'rui-message-rounded-full'
 }
 
@@ -39,7 +39,7 @@ export const messageVariants = cva('rui-message', {
 	},
 	compoundVariants: [
 		// * Default
-		{variant: 'default', severity: 'default', 	class: 'rui-message-default-primary'},
+		{variant: 'default', severity: 'primary', 	class: 'rui-message-default-primary'},
 		{variant: 'default', severity: 'secondary', class: 'rui-message-default-secondary'},
 		{variant: 'default', severity: 'success', 	class: 'rui-message-default-success'},
 		{variant: 'default', severity: 'info', 		class: 'rui-message-default-info'},
@@ -52,7 +52,7 @@ export const messageVariants = cva('rui-message', {
 		{variant: 'default', severity: 'ghost', 	class: 'rui-message-default-ghost'},
 		
 		// * Outline
-		{variant: 'outline', severity: 'default', 	class: 'rui-message-outline-primary'},
+		{variant: 'outline', severity: 'primary', 	class: 'rui-message-outline-primary'},
 		{variant: 'outline', severity: 'secondary',	class: 'rui-message-outline-secondary'},
 		{variant: 'outline', severity: 'success',	class: 'rui-message-outline-success'},
 		{variant: 'outline', severity: 'info', 		class: 'rui-message-outline-info'},
@@ -65,10 +65,10 @@ export const messageVariants = cva('rui-message', {
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-message-outline-ghost'},
 	],
 	defaultVariants: {
-		severity: 'default',
+		severity: 'primary',
 		variant: 'default',
 		raised: false,
-		rounded: 'default',
+		rounded: 'medium',
 	},
 });
 

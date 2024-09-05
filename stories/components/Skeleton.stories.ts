@@ -20,7 +20,7 @@ const meta: Meta<SkeletonProps> = {
 		severity: {
 			control: 'select',
 			options: [
-				'default',
+				'primary',
 				'secondary',
 				'success',
 				'info',
@@ -32,7 +32,7 @@ const meta: Meta<SkeletonProps> = {
 				'contrast',
 			],
 			table: {
-				defaultValue: { summary: 'default' },
+				defaultValue: { summary: 'primary' },
 				type: { summary: 'SkeletonSeverity' },
 			},
 		},
@@ -45,27 +45,27 @@ const meta: Meta<SkeletonProps> = {
 		},
 		rounded: {
 			control: 'select',
-			options: ['none','default','full'],
+			options: ['none', 'medium', 'full'],
 			table: {
-				defaultValue: { summary: 'default' },
+				defaultValue: { summary: 'medium' },
 				type: { summary: 'SkeletonRounded' },
 			},
 		},
 		children: {
 			table: {
-				type: { summary: 'ReactNode' }
-			}
-		}
+				type: { summary: 'ReactNode' },
+			},
+		},
 	},
 	args: {
 		raised: false,
-		rounded: 'default',
-		severity: 'default',
+		rounded: 'medium',
+		severity: 'primary',
 		variant: 'default',
 		style: {
 			width: '100px',
-			height: '100px'
-		}
+			height: '100px',
+		},
 	},
 	tags: ['autodocs'],
 } satisfies Meta<typeof Skeleton>;

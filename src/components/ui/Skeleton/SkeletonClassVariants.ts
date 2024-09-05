@@ -6,7 +6,7 @@ const variant = {
 }
 
 const severity = {
-	default: true,
+	primary: true,
 	secondary: true,
 	success: true,
 	info: true,
@@ -25,7 +25,7 @@ const raised = {
 
 const rounded = {
 	none: '',
-	default: 'rui-skeleton-rounded-medium',
+	medium: 'rui-skeleton-rounded-medium',
 	full: 'rui-skeleton-rounded-full'
 }
 
@@ -38,7 +38,7 @@ export const skeletonVariants = cva('rui-skeleton', {
 	},
 	compoundVariants: [
 		// * Default
-		{variant: 'default', severity: 'default', 	class: 'rui-skeleton-default-primary'},
+		{variant: 'default', severity: 'primary', 	class: 'rui-skeleton-default-primary'},
 		{variant: 'default', severity: 'secondary', class: 'rui-skeleton-default-secondary'},
 		{variant: 'default', severity: 'success', 	class: 'rui-skeleton-default-success'},
 		{variant: 'default', severity: 'info', 		class: 'rui-skeleton-default-info'},
@@ -50,7 +50,7 @@ export const skeletonVariants = cva('rui-skeleton', {
 		{variant: 'default', severity: 'contrast', 	class: 'rui-skeleton-default-contrast'},
 		
 		// * Outline
-		{variant: 'outline', severity: 'default', 	class: 'rui-skeleton-outline-primary'},
+		{variant: 'outline', severity: 'primary', 	class: 'rui-skeleton-outline-primary'},
 		{variant: 'outline', severity: 'secondary',	class: 'rui-skeleton-outline-secondary'},
 		{variant: 'outline', severity: 'success',	class: 'rui-skeleton-outline-success'},
 		{variant: 'outline', severity: 'info', 		class: 'rui-skeleton-outline-info'},
@@ -62,10 +62,10 @@ export const skeletonVariants = cva('rui-skeleton', {
 		{variant: 'outline', severity: 'contrast', 	class: 'rui-skeleton-outline-contrast'},
 	],
 	defaultVariants: {
-		severity: 'default',
+		severity: 'primary',
 		variant: 'default',
 		raised: false,
-		rounded: 'default',
+		rounded: 'medium',
 	},
 });
 

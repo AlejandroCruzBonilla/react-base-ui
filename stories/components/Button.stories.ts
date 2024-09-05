@@ -23,7 +23,7 @@ const meta: Meta<ButtonProps> = {
 		severity: {
 			control: 'select',
 			options: [
-				'default',
+				'primary',
 				'secondary',
 				'success',
 				'info',
@@ -36,15 +36,15 @@ const meta: Meta<ButtonProps> = {
 				'ghost',
 			],
 			table: {
-				defaultValue: { summary: 'default' },
+				defaultValue: { summary: 'primary' },
 				type: { summary: 'ButtonSeverity' },
 			},
 		},
 		size: {
 			control: 'select',
-			options: ['default', 'sm', 'lg', 'icon'],
+			options: ['sm', 'medium', 'lg', 'icon'],
 			table: {
-				defaultValue: { summary: 'default' },
+				defaultValue: { summary: 'medium' },
 				type: { summary: 'ButtonSize' },
 			},
 		},
@@ -57,9 +57,9 @@ const meta: Meta<ButtonProps> = {
 		},
 		rounded: {
 			control: 'select',
-			options: ['none','default','full'],
+			options: ['none', 'medium', 'full'],
 			table: {
-				defaultValue: { summary: 'default' },
+				defaultValue: { summary: 'medium' },
 				type: { summary: 'ButtonRounded' },
 			},
 		},
@@ -70,14 +70,19 @@ const meta: Meta<ButtonProps> = {
 				type: { summary: 'boolean' },
 			},
 		},
+		asChild: {
+			table: {
+				disable: true,
+			},
+		},
 	},
 	args: {
 		children: 'React Node',
 		disabled: false,
 		raised: false,
-		rounded: 'default',
-		severity: 'default',
-		size: 'default',
+		rounded: 'medium',
+		severity: 'primary',
+		size: 'medium',
 		variant: 'default',
 	},
 	tags: ['autodocs'],

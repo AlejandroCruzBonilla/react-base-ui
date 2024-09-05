@@ -6,7 +6,7 @@ const variant = {
 }
 
 const severity = {
-	default: true,
+	primary: true,
 	secondary: true,
 	success: true,
 	info: true,
@@ -27,7 +27,7 @@ const raised = {
 const rounded = {
 	none: '',
 	medium: 'rui-chip-rounded-medium',
-	default: 'rui-chip-rounded-full'
+	full: 'rui-chip-rounded-full'
 }
 
 export const chipVariants = cva('rui-chip', {
@@ -39,7 +39,7 @@ export const chipVariants = cva('rui-chip', {
 	},
 	compoundVariants: [
 		// * Default
-		{variant: 'default', severity: 'default', 	class: 'rui-chip-default-primary'},
+		{variant: 'default', severity: 'primary', 	class: 'rui-chip-default-primary'},
 		{variant: 'default', severity: 'secondary', class: 'rui-chip-default-secondary'},
 		{variant: 'default', severity: 'success', 	class: 'rui-chip-default-success'},
 		{variant: 'default', severity: 'info', 		class: 'rui-chip-default-info'},
@@ -52,7 +52,7 @@ export const chipVariants = cva('rui-chip', {
 		{variant: 'default', severity: 'ghost', 	class: 'rui-chip-default-ghost'},
 		
 		// * Outline
-		{variant: 'outline', severity: 'default', 	class: 'rui-chip-outline-primary'},
+		{variant: 'outline', severity: 'primary', 	class: 'rui-chip-outline-primary'},
 		{variant: 'outline', severity: 'secondary',	class: 'rui-chip-outline-secondary'},
 		{variant: 'outline', severity: 'success',	class: 'rui-chip-outline-success'},
 		{variant: 'outline', severity: 'info', 		class: 'rui-chip-outline-info'},
@@ -65,10 +65,10 @@ export const chipVariants = cva('rui-chip', {
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-chip-outline-ghost'},
 	],
 	defaultVariants: {
-		severity: 'default',
+		severity: 'primary',
 		variant: 'default',
 		raised: false,
-		rounded: 'default',
+		rounded: 'full',
 	},
 });
 

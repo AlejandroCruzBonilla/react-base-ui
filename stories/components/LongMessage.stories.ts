@@ -1,5 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { LongMessage, type LongMessageProps } from '../../src/components/ui/LongMessage';
+import {
+	LongMessage,
+	type LongMessageProps,
+} from '../../src/components/ui/LongMessage';
 
 const meta: Meta<LongMessageProps> = {
 	title: 'Components/Long Message',
@@ -20,7 +23,7 @@ const meta: Meta<LongMessageProps> = {
 		severity: {
 			control: 'select',
 			options: [
-				'default',
+				'primary',
 				'secondary',
 				'success',
 				'info',
@@ -33,7 +36,7 @@ const meta: Meta<LongMessageProps> = {
 				'ghost',
 			],
 			table: {
-				defaultValue: { summary: 'default' },
+				defaultValue: { summary: 'primary' },
 				type: { summary: 'MessageSeverity' },
 			},
 		},
@@ -46,24 +49,24 @@ const meta: Meta<LongMessageProps> = {
 		},
 		rounded: {
 			control: 'select',
-			options: ['none','default'],
+			options: ['none', 'medium'],
 			table: {
-				defaultValue: { summary: 'default' },
+				defaultValue: { summary: 'medium' },
 				type: { summary: 'MessageRounded' },
 			},
 		},
 		children: {
 			table: {
-				type: { summary: 'ReactNode' }
-			}
-		}
+				type: { summary: 'ReactNode' },
+			},
+		},
 	},
 	args: {
 		children: 'React Node',
 		value: 'Text Value',
 		raised: false,
-		rounded: 'default',
-		severity: 'default',
+		rounded: 'medium',
+		severity: 'primary',
 		variant: 'default',
 	},
 	tags: ['autodocs'],

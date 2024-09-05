@@ -2,7 +2,7 @@ import { cva } from 'class-variance-authority';
 
 
 const severity = {
-	default: 'rui-separator-default-primary',
+	primary: 'rui-separator-default-primary',
 	secondary: 'rui-separator-default-secondary',
 	success: 'rui-separator-default-success',
 	info: 'rui-separator-default-info',
@@ -25,7 +25,7 @@ export const separatorVariants = cva('rui-separator', {
 		orientation,
 	},
 	defaultVariants: {
-		severity: 'default',
+		severity: 'primary',
 		orientation: 'horizontal',
 	},
 });

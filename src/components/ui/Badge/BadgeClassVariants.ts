@@ -6,7 +6,7 @@ const variant = {
 }
 
 const severity = {
-	default: true,
+	primary: true,
 	secondary: true,
 	success: true,
 	info: true,
@@ -26,7 +26,7 @@ const raised = {
 
 const rounded = {
 	none: '',
-	default: 'rui-badge-rounded-medium',
+	medium: 'rui-badge-rounded-medium',
 	full: 'rui-badge-rounded-full'
 }
 
@@ -39,7 +39,7 @@ export const badgeVariants = cva('rui-badge', {
 	},
 	compoundVariants: [
 		// * Default
-		{variant: 'default', severity: 'default', 	class: 'rui-badge-default-primary'},
+		{variant: 'default', severity: 'primary', 	class: 'rui-badge-default-primary'},
 		{variant: 'default', severity: 'secondary', class: 'rui-badge-default-secondary'},
 		{variant: 'default', severity: 'success', 	class: 'rui-badge-default-success'},
 		{variant: 'default', severity: 'info', 		class: 'rui-badge-default-info'},
@@ -52,7 +52,7 @@ export const badgeVariants = cva('rui-badge', {
 		{variant: 'default', severity: 'ghost', 	class: 'rui-badge-default-ghost'},
 		
 		// * Outline
-		{variant: 'outline', severity: 'default', 	class: 'rui-badge-outline-primary'},
+		{variant: 'outline', severity: 'primary', 	class: 'rui-badge-outline-primary'},
 		{variant: 'outline', severity: 'secondary',	class: 'rui-badge-outline-secondary'},
 		{variant: 'outline', severity: 'success',	class: 'rui-badge-outline-success'},
 		{variant: 'outline', severity: 'info', 		class: 'rui-badge-outline-info'},
@@ -65,10 +65,10 @@ export const badgeVariants = cva('rui-badge', {
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-badge-outline-ghost'},
 	],
 	defaultVariants: {
-		severity: 'default',
+		severity: 'primary',
 		variant: 'default',
 		raised: false,
-		rounded: 'default',
+		rounded: 'medium',
 	},
 });
 

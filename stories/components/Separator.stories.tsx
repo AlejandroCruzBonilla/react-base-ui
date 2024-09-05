@@ -16,7 +16,7 @@ const meta: Meta<SeparatorProps> = {
 		severity: {
 			control: 'select',
 			options: [
-				'default',
+				'primary',
 				'secondary',
 				'success',
 				'info',
@@ -28,7 +28,7 @@ const meta: Meta<SeparatorProps> = {
 				'contrast',
 			],
 			table: {
-				defaultValue: { summary: 'default' },
+				defaultValue: { summary: 'primary' },
 				type: { summary: 'SeparatorSeverity' },
 			},
 		},
@@ -36,8 +36,8 @@ const meta: Meta<SeparatorProps> = {
 			control: 'inline-radio',
 			options: ['horizontal', 'vertical'],
 			table: {
-				disable: true,
-				defaultValue: { summary: 'default' },
+				// disable: true,
+				defaultValue: { summary: 'horizontal' },
 				type: { summary: 'SeparatorSeverity' },
 			},
 		},
@@ -51,7 +51,8 @@ const meta: Meta<SeparatorProps> = {
 	},
 	args: {
 		decorative: true,
-		severity: 'default',
+		orientation: 'horizontal',
+		severity: 'primary',
 	},
 	tags: ['autodocs'],
 	render: (args) => {

@@ -7,7 +7,7 @@ const variant = {
 }
 
 const severity = {
-	default: true,
+	primary: true,
 	secondary: true,
 	success: true,
 	info: true,
@@ -27,7 +27,7 @@ const raised = {
 
 const rounded = {
 	none: '',
-	default: 'rui-tag-rounded-medium',
+	medium: 'rui-tag-rounded-medium',
 	full: 'rui-tag-rounded-full'
 }
 
@@ -40,7 +40,7 @@ export const tagVariants = cva('rui-tag', {
 	},
 	compoundVariants: [
 		// * Default
-		{variant: 'default', severity: 'default', 	class: 'rui-tag-default-primary'},
+		{variant: 'default', severity: 'primary', 	class: 'rui-tag-default-primary'},
 		{variant: 'default', severity: 'secondary', class: 'rui-tag-default-secondary'},
 		{variant: 'default', severity: 'success', 	class: 'rui-tag-default-success'},
 		{variant: 'default', severity: 'info', 		class: 'rui-tag-default-info'},
@@ -53,7 +53,7 @@ export const tagVariants = cva('rui-tag', {
 		{variant: 'default', severity: 'ghost', 	class: 'rui-tag-default-ghost'},
 		
 		// * Outline
-		{variant: 'outline', severity: 'default', 	class: 'rui-tag-outline-primary'},
+		{variant: 'outline', severity: 'primary', 	class: 'rui-tag-outline-primary'},
 		{variant: 'outline', severity: 'secondary',	class: 'rui-tag-outline-secondary'},
 		{variant: 'outline', severity: 'success',	class: 'rui-tag-outline-success'},
 		{variant: 'outline', severity: 'info', 		class: 'rui-tag-outline-info'},
@@ -66,7 +66,7 @@ export const tagVariants = cva('rui-tag', {
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-tag-outline-ghost'},
 
 		// * Link
-		{variant: 'link', severity: 'default', 	 class: 'rui-tag-link-primary'},
+		{variant: 'link', severity: 'primary', 	 class: 'rui-tag-link-primary'},
 		{variant: 'link', severity: 'secondary', class: 'rui-tag-link-secondary'},
 		{variant: 'link', severity: 'success', 	 class: 'rui-tag-link-success'},
 		{variant: 'link', severity: 'info', 	 class: 'rui-tag-link-info'},
@@ -79,10 +79,10 @@ export const tagVariants = cva('rui-tag', {
 		{variant: 'link', severity: 'ghost', 	 class: 'rui-tag-link-ghost'},
 	],
 	defaultVariants: {
-		severity: 'default',
+		severity: 'primary',
 		variant: 'default',
 		raised: false,
-		rounded: 'default',
+		rounded: 'medium',
 	},
 });
 

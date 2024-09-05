@@ -20,7 +20,7 @@ const meta: Meta<ChipProps> = {
 		severity: {
 			control: 'select',
 			options: [
-				'default',
+				'primary',
 				'secondary',
 				'success',
 				'info',
@@ -33,8 +33,8 @@ const meta: Meta<ChipProps> = {
 				'ghost',
 			],
 			table: {
-				defaultValue: { summary: 'default' },
-				type: { summary: 'TagSeverity' },
+				defaultValue: { summary: 'primary' },
+				type: { summary: 'ChipSeverity' },
 			},
 		},
 		raised: {
@@ -46,24 +46,24 @@ const meta: Meta<ChipProps> = {
 		},
 		rounded: {
 			control: 'select',
-			options: ['none','medium','default'],
+			options: ['none', 'medium', 'full'],
 			table: {
-				defaultValue: { summary: 'default' },
-				type: { summary: 'TagRounded' },
+				defaultValue: { summary: 'full' },
+				type: { summary: 'ChipRounded' },
 			},
 		},
 		children: {
 			table: {
-				type: { summary: 'ReactNode' }
-			}
-		}
+				type: { summary: 'ReactNode' },
+			},
+		},
 	},
 	args: {
 		children: 'React Node',
 		value: 'Text Value',
 		raised: false,
-		rounded: 'default',
-		severity: 'default',
+		rounded: 'full',
+		severity: 'primary',
 		variant: 'default',
 	},
 	tags: ['autodocs'],
