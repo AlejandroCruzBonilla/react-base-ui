@@ -1,0 +1,105 @@
+@layer components {
+	.rui-skeleton {
+		@apply animate-pulse;
+
+		// * Variants & Severity
+		&-default {
+			&-primary {
+				@apply bg-primary;
+			}
+
+			&-secondary {
+				@apply bg-secondary;
+			}
+
+			&-success {
+				@apply bg-success;
+			}
+
+			&-info {
+				@apply bg-info;
+			}
+
+			&-warning {
+				@apply bg-warning;
+			}
+
+			&-help {
+				@apply bg-help;
+			}
+
+			&-danger {
+				@apply bg-danger;
+			}
+
+			&-dark {
+				@apply bg-dark/30;
+			}
+
+			&-light {
+				@apply bg-light/30;
+			}
+
+			&-contrast {
+				@apply bg-background-foreground/30;
+			}
+		}
+
+		&-outline {
+			&-primary {
+				@apply border border-primary-accent dark:border-primary;
+			}
+
+			&-secondary {
+				@apply border border-secondary-accent dark:border-secondary;
+			}
+
+			&-success {
+				@apply border border-success-accent dark:border-success;
+			}
+
+			&-info {
+				@apply border border-info-accent dark:border-info;
+			}
+
+			&-warning {
+				@apply border border-warning-accent dark:border-warning;
+			}
+
+			&-danger {
+				@apply border border-danger-accent dark:border-danger;
+			}
+
+			&-help {
+				@apply border border-help-accent dark:border-help;
+			}
+
+			&-light {
+				@apply border border-light;
+			}
+
+			&-dark {
+				@apply border border-dark;
+			}
+
+			&-contrast {
+				@apply border border-background-foreground;
+			}
+		}
+
+		// * Modifiers
+		&-raised {
+			@apply shadow-raised hover:shadow-none;
+		}
+
+		&-rounded {
+			&-medium {
+				@apply rounded-md;
+			}
+
+			&-full {
+				@apply rounded-full;
+			}
+		}
+	}
+}
