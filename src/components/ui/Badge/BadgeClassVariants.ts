@@ -32,10 +32,10 @@ const rounded = {
 
 export const badgeVariants = cva('rui-badge', {
 	variants: {
-		variant,
-		severity,
 		raised,
 		rounded,
+		severity,
+		variant,
 	},
 	compoundVariants: [
 		// * Default
@@ -65,10 +65,10 @@ export const badgeVariants = cva('rui-badge', {
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-badge-outline-ghost'},
 	],
 	defaultVariants: {
-		severity: 'primary',
-		variant: 'default',
 		raised: false,
 		rounded: 'medium',
+		severity: 'primary',
+		variant: 'default',
 	},
 });
 

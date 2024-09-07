@@ -33,10 +33,10 @@ const rounded = {
 
 export const tagVariants = cva('rui-tag', {
 	variants: {
-		variant,
-		severity,
 		raised,
 		rounded,
+		severity,
+		variant,
 	},
 	compoundVariants: [
 		// * Default
@@ -79,10 +79,10 @@ export const tagVariants = cva('rui-tag', {
 		{variant: 'link', severity: 'ghost', 	 class: 'rui-tag-link-ghost'},
 	],
 	defaultVariants: {
-		severity: 'primary',
-		variant: 'default',
 		raised: false,
 		rounded: 'medium',
+		severity: 'primary',
+		variant: 'default',
 	},
 });
 

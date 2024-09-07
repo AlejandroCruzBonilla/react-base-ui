@@ -40,11 +40,11 @@ const rounded = {
 
 export const buttonVariants = cva('rui-button', {
 	variants: {
-		variant,
-		severity,
-		size,
 		raised,
 		rounded,
+		severity,
+		size,
+		variant,
 	},
 	compoundVariants: [
 		// * Default
@@ -87,11 +87,11 @@ export const buttonVariants = cva('rui-button', {
 		{variant: 'link', severity: 'ghost', 	 class: 'rui-button-link-ghost'},
 	],
 	defaultVariants: {
-		severity: 'primary',
-		variant: 'default',
-		size: 'medium',
 		raised: false,
 		rounded: 'medium',
+		severity: 'primary',
+		size: 'medium',
+		variant: 'default',
 	},
 });
 

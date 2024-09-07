@@ -31,10 +31,10 @@ const rounded = {
 
 export const longMessageVariants = cva('rui-long_message', {
 	variants: {
-		variant,
-		severity,
 		raised,
 		rounded,
+		severity,
+		variant,
 	},
 	compoundVariants: [
 		// * Default
@@ -64,10 +64,10 @@ export const longMessageVariants = cva('rui-long_message', {
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-long_message-outline-ghost'},
 	],
 	defaultVariants: {
-		severity: 'primary',
-		variant: 'default',
 		raised: false,
 		rounded: 'medium',
+		severity: 'primary',
+		variant: 'default',
 	},
 });
 

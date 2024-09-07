@@ -32,10 +32,10 @@ const rounded = {
 
 export const chipVariants = cva('rui-chip', {
 	variants: {
-		variant,
-		severity,
 		raised,
 		rounded,
+		severity,
+		variant,
 	},
 	compoundVariants: [
 		// * Default
@@ -65,10 +65,10 @@ export const chipVariants = cva('rui-chip', {
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-chip-outline-ghost'},
 	],
 	defaultVariants: {
-		severity: 'primary',
-		variant: 'default',
 		raised: false,
 		rounded: 'full',
+		severity: 'primary',
+		variant: 'default',
 	},
 });
 

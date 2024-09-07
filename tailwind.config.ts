@@ -5,6 +5,7 @@ const config = {
   darkMode: "selector",
   content: [
     './src/**/*.{ts,tsx}',
+    './stories/**/*.{ts,tsx}',
 	],
   prefix: "",
   theme: {

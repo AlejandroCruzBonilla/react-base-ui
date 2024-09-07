@@ -11,7 +11,19 @@ interface BadgeProps
 }
 
 const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
-	({ className, raised, rounded, severity, variant, value, children, ...props }, ref) => {
+	(
+		{
+			className,
+			raised,
+			rounded,
+			severity,
+			variant,
+			value,
+			children,
+			...props
+		},
+		ref,
+	) => {
 		return (
 			<div
 				ref={ref}
@@ -23,11 +35,10 @@ const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
 						rounded,
 						className,
 					}),
-					className,
 				)}
 				{...props}
 			>
-				{ value ? value : children}
+				{value ? value : children}
 			</div>
 		);
 	},

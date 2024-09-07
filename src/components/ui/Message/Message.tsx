@@ -11,7 +11,19 @@ interface MessageProps
 }
 
 const Message = React.forwardRef<HTMLDivElement, MessageProps>(
-	({ className, raised, rounded, severity, variant, value, children, ...props }, ref) => {
+	(
+		{
+			className,
+			raised,
+			rounded,
+			severity,
+			variant,
+			value,
+			children,
+			...props
+		},
+		ref,
+	) => {
 		return (
 			<div
 				ref={ref}
@@ -23,11 +35,10 @@ const Message = React.forwardRef<HTMLDivElement, MessageProps>(
 						rounded,
 						className,
 					}),
-					className,
 				)}
 				{...props}
 			>
-				{ value ? value : children}
+				{value ? value : children}
 			</div>
 		);
 	},

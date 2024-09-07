@@ -21,12 +21,12 @@ const orientation = {
 
 export const separatorVariants = cva('rui-separator', {
 	variants: {
-		severity,
 		orientation,
+		severity,
 	},
 	defaultVariants: {
-		severity: 'primary',
 		orientation: 'horizontal',
+		severity: 'primary',
 	},
 });
 

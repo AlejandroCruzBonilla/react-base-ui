@@ -11,11 +11,10 @@ import {
 } from './SeparatorClassVariants';
 
 interface SeparatorProps
-	extends 
-		React.ComponentPropsWithoutRef<typeof SeparatorPrimitive.Root>,
+	extends React.ComponentPropsWithoutRef<typeof SeparatorPrimitive.Root>,
 		VariantProps<SeparatorClassVariantProps> {
-			orientation: SeparatorOrientation
-		}
+	orientation: SeparatorOrientation;
+}
 
 const Separator = React.forwardRef<
 	React.ElementRef<typeof SeparatorPrimitive.Root>,
@@ -38,9 +37,9 @@ const Separator = React.forwardRef<
 			className={cn(
 				separatorVariants({
 					severity,
-					orientation
+					orientation,
+					className,
 				}),
-				className,
 			)}
 			{...props}
 		/>

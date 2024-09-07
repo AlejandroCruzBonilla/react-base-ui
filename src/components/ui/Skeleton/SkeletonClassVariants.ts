@@ -31,10 +31,10 @@ const rounded = {
 
 export const skeletonVariants = cva('rui-skeleton', {
 	variants: {
-		variant,
-		severity,
 		raised,
 		rounded,
+		severity,
+		variant,
 	},
 	compoundVariants: [
 		// * Default
@@ -62,10 +62,10 @@ export const skeletonVariants = cva('rui-skeleton', {
 		{variant: 'outline', severity: 'contrast', 	class: 'rui-skeleton-outline-contrast'},
 	],
 	defaultVariants: {
-		severity: 'primary',
-		variant: 'default',
 		raised: false,
 		rounded: 'medium',
+		severity: 'primary',
+		variant: 'default',
 	},
 });
 

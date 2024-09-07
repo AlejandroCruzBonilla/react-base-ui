@@ -32,10 +32,10 @@ const rounded = {
 
 export const messageVariants = cva('rui-message', {
 	variants: {
-		variant,
-		severity,
 		raised,
 		rounded,
+		severity,
+		variant,
 	},
 	compoundVariants: [
 		// * Default
@@ -65,10 +65,10 @@ export const messageVariants = cva('rui-message', {
 		{variant: 'outline', severity: 'ghost', 	class: 'rui-message-outline-ghost'},
 	],
 	defaultVariants: {
-		severity: 'primary',
-		variant: 'default',
 		raised: false,
 		rounded: 'medium',
+		severity: 'primary',
+		variant: 'default',
 	},
 });
 

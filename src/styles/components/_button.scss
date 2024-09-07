@@ -144,13 +144,13 @@
 		// * Sizes
 		&-size {
 			&-sm {
-				@apply h-9 rounded-md px-2;
+				@apply h-9 px-2;
 			}
 			&-medium {
 				@apply h-10 px-4 py-2;
 			}
 			&-lg {
-				@apply h-11 rounded-md px-8;
+				@apply h-11 px-8;
 			}
 			&-icon {
 				@apply h-10 w-10;

@@ -11,7 +11,19 @@ interface ChipProps
 }
 
 const Chip = React.forwardRef<HTMLDivElement, ChipProps>(
-	({ className, raised, rounded, severity, variant, value, children, ...props }, ref) => {
+	(
+		{
+			className,
+			raised,
+			rounded,
+			severity,
+			variant,
+			value,
+			children,
+			...props
+		},
+		ref,
+	) => {
 		return (
 			<div
 				ref={ref}
@@ -23,11 +35,10 @@ const Chip = React.forwardRef<HTMLDivElement, ChipProps>(
 						rounded,
 						className,
 					}),
-					className,
 				)}
 				{...props}
 			>
-				{ value ? value : children}
+				{value ? value : children}
 			</div>
 		);
 	},
