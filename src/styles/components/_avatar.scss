@@ -1,0 +1,180 @@
+@layer components {
+	.rui-avatar {
+		@apply relative flex shrink-0 overflow-hidden;
+
+		// * Variants & Severity
+		&-default {
+			&-primary {
+				@apply bg-primary text-primary-accent hover:bg-primary/80;
+			}
+
+			&-secondary {
+				@apply bg-secondary text-secondary-accent hover:bg-secondary/80;
+			}
+
+			&-success {
+				@apply bg-success text-success-accent hover:bg-success/80;
+			}
+
+			&-info {
+				@apply bg-info text-info-accent hover:bg-info/80;
+			}
+
+			&-warning {
+				@apply bg-warning text-warning-accent hover:bg-warning/80;
+			}
+
+			&-help {
+				@apply bg-help text-help-accent hover:bg-help/80;
+			}
+
+			&-danger {
+				@apply bg-danger text-danger-accent hover:bg-danger/80;
+			}
+
+			&-dark {
+				@apply bg-dark text-dark-foreground hover:bg-dark/80;
+			}
+
+			&-light {
+				@apply bg-light text-light-foreground hover:bg-light/80;
+			}
+
+			&-contrast {
+				@apply bg-background-foreground text-background hover:bg-background-foreground/80;
+			}
+
+			&-ghost {
+				@apply text-background-foreground hover:bg-background-accent;
+			}
+		}
+
+		&-outline {
+			&-primary {
+				@apply border border-primary-accent text-primary-accent hover:bg-primary dark:border-primary dark:text-primary dark:hover:bg-primary-accent/70;
+			}
+
+			&-secondary {
+				@apply border border-secondary-accent text-secondary-accent hover:bg-secondary dark:border-secondary dark:text-secondary dark:hover:bg-secondary-accent/70;
+			}
+
+			&-success {
+				@apply border border-success-accent text-success-accent hover:bg-success dark:border-success dark:text-success dark:hover:bg-success-accent/70;
+			}
+
+			&-info {
+				@apply border border-info-accent text-info-accent hover:bg-info dark:border-info dark:text-info dark:hover:bg-info-accent/70;
+			}
+
+			&-warning {
+				@apply border border-warning-accent text-warning-accent hover:bg-warning dark:border-warning dark:text-warning dark:hover:bg-warning-accent/70;
+			}
+
+			&-danger {
+				@apply border border-danger-accent text-danger-accent hover:bg-danger dark:border-danger dark:text-danger dark:hover:bg-danger-accent/70;
+			}
+
+			&-help {
+				@apply border border-help-accent text-help-accent hover:bg-help dark:border-help dark:text-help dark:hover:bg-help-accent/70;
+			}
+
+			&-light {
+				@apply border border-light hover:bg-light/10 text-light;
+			}
+
+			&-dark {
+				@apply border border-dark hover:bg-dark/10 text-dark;
+			}
+
+			&-contrast {
+				@apply border border-background-foreground hover:bg-background-foreground/10 text-background-foreground;
+			}
+
+			&-ghost {
+				@apply border border-transparent hover:border-background-foreground/50 hover:bg-background-accent text-background-foreground;
+			}
+		}
+
+		&-link {
+			&-primary {
+				@apply text-primary-accent underline-offset-4 hover:underline hover:bg-primary/30 dark:text-primary dark:hover:bg-primary-accent/30;
+			}
+
+			&-secondary {
+				@apply text-secondary-accent underline-offset-4 hover:underline hover:bg-secondary/30 dark:text-secondary dark:hover:bg-secondary-accent/30;
+			}
+
+			&-success {
+				@apply text-success-accent underline-offset-4 hover:underline hover:bg-success/30 dark:text-success dark:hover:bg-success-accent/30;
+			}
+
+			&-info {
+				@apply text-info-accent underline-offset-4 hover:underline hover:bg-info/30 dark:text-info dark:hover:bg-info-accent/30;
+			}
+
+			&-warning {
+				@apply text-warning-accent underline-offset-4 hover:underline hover:bg-warning/30 dark:text-warning dark:hover:bg-warning-accent/30;
+			}
+
+			&-danger {
+				@apply text-danger-accent underline-offset-4 hover:underline hover:bg-danger/30 dark:text-danger dark:hover:bg-danger-accent/30;
+			}
+
+			&-help {
+				@apply text-help-accent underline-offset-4 hover:underline hover:bg-help/30 dark:text-help dark:hover:bg-help-accent/30;
+			}
+
+			&-dark {
+				@apply text-dark underline-offset-4 hover:underline hover:bg-dark/10;
+			}
+
+			&-light {
+				@apply text-light underline-offset-4 hover:underline hover:bg-light/10;
+			}
+
+			&-contrast {
+				@apply text-background-foreground underline-offset-4 hover:underline hover:bg-background-foreground/10;
+			}
+
+			&-ghost {
+				@apply text-background-foreground underline-offset-4 hover:underline hover:bg-background-accent;
+			}
+		}
+
+		// * Modifiers
+		&-raised {
+			@apply shadow-raised hover:shadow-none;
+		}
+
+		&-rounded {
+			&-medium {
+				@apply rounded-md;
+			}
+
+			&-full {
+				@apply rounded-full;
+			}
+		}
+
+		&-size {
+			&-sm {
+				@apply h-8 w-8;
+			}
+			&-medium {
+				@apply h-10 w-10;
+			}
+			&-lg {
+				@apply h-12 w-12;
+			}
+		}
+
+		// * Child
+		&__fallback {
+			@apply flex h-full w-full items-center justify-center;
+		}
+
+		&__image {
+			@apply aspect-square h-full w-full;
+		}
+	}
+}
