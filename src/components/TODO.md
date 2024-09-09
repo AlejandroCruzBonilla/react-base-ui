@@ -32,8 +32,6 @@ Toolbar
 
  
 TODO: Próximos Componentes
-Avatar
--
 Tooltip
 Messages
 LongMessages
@@ -51,6 +49,7 @@ Chip - Add props: icon, iconPosition closeable
 READY: Componentes Listos
 Skeleton
 Separator
+Avatar
 
 
 FIXME: Componentes para Arreglar
