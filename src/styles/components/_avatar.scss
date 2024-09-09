@@ -95,52 +95,6 @@
 			}
 		}
 
-		&-link {
-			&-primary {
-				@apply text-primary-accent underline-offset-4 hover:underline hover:bg-primary/30 dark:text-primary dark:hover:bg-primary-accent/30;
-			}
-
-			&-secondary {
-				@apply text-secondary-accent underline-offset-4 hover:underline hover:bg-secondary/30 dark:text-secondary dark:hover:bg-secondary-accent/30;
-			}
-
-			&-success {
-				@apply text-success-accent underline-offset-4 hover:underline hover:bg-success/30 dark:text-success dark:hover:bg-success-accent/30;
-			}
-
-			&-info {
-				@apply text-info-accent underline-offset-4 hover:underline hover:bg-info/30 dark:text-info dark:hover:bg-info-accent/30;
-			}
-
-			&-warning {
-				@apply text-warning-accent underline-offset-4 hover:underline hover:bg-warning/30 dark:text-warning dark:hover:bg-warning-accent/30;
-			}
-
-			&-danger {
-				@apply text-danger-accent underline-offset-4 hover:underline hover:bg-danger/30 dark:text-danger dark:hover:bg-danger-accent/30;
-			}
-
-			&-help {
-				@apply text-help-accent underline-offset-4 hover:underline hover:bg-help/30 dark:text-help dark:hover:bg-help-accent/30;
-			}
-
-			&-dark {
-				@apply text-dark underline-offset-4 hover:underline hover:bg-dark/10;
-			}
-
-			&-light {
-				@apply text-light underline-offset-4 hover:underline hover:bg-light/10;
-			}
-
-			&-contrast {
-				@apply text-background-foreground underline-offset-4 hover:underline hover:bg-background-foreground/10;
-			}
-
-			&-ghost {
-				@apply text-background-foreground underline-offset-4 hover:underline hover:bg-background-accent;
-			}
-		}
-
 		// * Modifiers
 		&-raised {
 			@apply shadow-raised hover:shadow-none;
