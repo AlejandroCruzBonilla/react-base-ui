@@ -32,7 +32,6 @@ Toolbar
 
  
 TODO: Próximos Componentes
-Tooltip
 Messages
 LongMessages
 Chips
@@ -50,6 +49,7 @@ READY: Componentes Listos
 Skeleton
 Separator
 Avatar
+Tooltip
 
 
 FIXME: Componentes para Arreglar

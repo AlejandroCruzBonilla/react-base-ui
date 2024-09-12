@@ -1,0 +1,119 @@
+@layer components {
+	.rui-tooltip {
+		@apply z-50 overflow-hidden px-3 py-1.5 text-sm;
+
+		// * Variants & Severity
+		&-default {
+			&-primary {
+				@apply bg-primary text-primary-accent fill-primary;
+			}
+
+			&-secondary {
+				@apply bg-secondary text-secondary-accent fill-secondary;
+			}
+
+			&-success {
+				@apply bg-success text-success-accent fill-success;
+			}
+
+			&-info {
+				@apply bg-info text-info-accent fill-info;
+			}
+
+			&-warning {
+				@apply bg-warning text-warning-accent fill-warning;
+			}
+
+			&-help {
+				@apply bg-help text-help-accent fill-help;
+			}
+
+			&-danger {
+				@apply bg-danger text-danger-accent fill-danger;
+			}
+
+			&-dark {
+				@apply bg-dark text-dark-foreground fill-dark;
+			}
+
+			&-light {
+				@apply bg-light text-light-foreground fill-light;
+			}
+
+			&-contrast {
+				@apply bg-background-foreground text-background fill-background-foreground;
+			}
+		}
+
+		&-outline {
+			&-primary {
+				@apply border border-primary-accent text-primary-accent dark:border-primary dark:text-primary fill-primary-accent dark:fill-primary;
+			}
+
+			&-secondary {
+				@apply border border-secondary-accent text-secondary-accent dark:border-secondary dark:text-secondary fill-secondary-accent dark:fill-secondary;
+			}
+
+			&-success {
+				@apply border border-success-accent text-success-accent dark:border-success dark:text-success fill-success-accent dark:fill-success;
+			}
+
+			&-info {
+				@apply border border-info-accent text-info-accent dark:border-info dark:text-info fill-info-accent dark:fill-info;
+			}
+
+			&-warning {
+				@apply border border-warning-accent text-warning-accent dark:border-warning dark:text-warning fill-warning-accent dark:fill-warning;
+			}
+
+			&-danger {
+				@apply border border-danger-accent text-danger-accent dark:border-danger dark:text-danger fill-danger-accent dark:fill-danger;
+			}
+
+			&-help {
+				@apply border border-help-accent text-help-accent dark:border-help dark:text-help fill-help-accent dark:fill-help;
+			}
+
+			&-light {
+				@apply border border-light text-light fill-light;
+			}
+
+			&-dark {
+				@apply border border-dark text-dark fill-dark;
+			}
+
+			&-contrast {
+				@apply border border-background-foreground text-background-foreground fill-background-foreground;
+			}
+		}
+
+		// * Modifiers
+		&-raised {
+			@apply shadow-raised hover:shadow-none;
+		}
+
+		&-rounded {
+			&-medium {
+				@apply rounded-md;
+			}
+
+			&-full {
+				@apply rounded-full;
+			}
+		}
+
+		&-size {
+			&-sm {
+				@apply h-8 w-8;
+			}
+			&-medium {
+				@apply h-10 w-10;
+			}
+			&-lg {
+				@apply h-12 w-12;
+			}
+		}
+
+		// * Child
+	}
+}
