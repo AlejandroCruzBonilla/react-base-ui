@@ -1,6 +1,5 @@
 INFO: BackLog
 Accordion
-Avatar
 Backdrop
 BreadCrumbs
 ButtonGroup
@@ -32,6 +31,9 @@ Toolbar
 
  
 TODO: Próximos Componentes
+Card
+Progress
+-
 Messages
 LongMessages
 Chips
@@ -43,6 +45,8 @@ Badge - Position para que se muestre como un super indice
 Message - Add props: icon, iconPosition closeable
 Long Message - Add props: icon, iconPosition closeable
 Chip - Add props: icon, iconPosition closeable
+Separator - Add Child
+-- Change colors: contrast, Ghost, dark, light, (add color text?)
 
 
 READY: Componentes Listos

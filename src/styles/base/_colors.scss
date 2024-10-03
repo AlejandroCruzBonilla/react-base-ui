@@ -2,7 +2,7 @@
 
 @layer base {
 	:root {
-		--color-light: #{f.hexToRgbColors(#f8f9fa)};
+		--color-light: #{f.hexToRgbColors(#ffffff)};
 		--color-light-foreground: #{f.hexToRgbColors(#1b1c1d)};
 		--color-light-accent: #{f.hexToRgbColors(#f8f9fa)};
 
@@ -13,6 +13,7 @@
 		--color-background: #{f.hexToRgbColors(#f8f9fa)};
 		--color-background-foreground: #{f.hexToRgbColors(#1b1c1d)};
 		--color-background-accent: #{f.hexToRgbColors(#e2e2e2)};
+		--color-background-accent: #{f.hexToRgbColors(#ffffff)};
 
 		// * Colors
 		--color-primary: #{f.hexToRgbColors(#c5edff)};
