@@ -31,7 +31,6 @@ Toolbar
 
  
 TODO: Próximos Componentes
-Card
 Progress
 -
 Messages
@@ -54,6 +53,7 @@ Skeleton
 Separator
 Avatar
 Tooltip
+Card
 
 
 FIXME: Componentes para Arreglar
